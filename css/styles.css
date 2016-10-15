@@ -1,7 +1,27 @@
 body {
+  font-family: 'Roboto', sans-serif;
   max-width: 1440px; }
-  body p {
-    font-size: 20px; }
+  body .contactme {
+    height: 100px;
+    color: white;
+    background-color: #F76025; }
+    body .contactme .contactInfo {
+      padding-top: 23px;
+      margin-left: 40px;
+      width: 50%; }
+      body .contactme .contactInfo .floatbox {
+        margin: auto;
+        display: block;
+        width: 150px; }
+        body .contactme .contactInfo .floatbox a {
+          line-height: 23px;
+          margin-left: 10px;
+          float: left;
+          color: white;
+          text-decoration: none; }
+        body .contactme .contactInfo .floatbox span {
+          float: left;
+          clear: both; }
   body .contactHeader {
     background-image: url("../images/imagination.jpg");
     background-size: contain;
@@ -14,8 +34,5 @@ body {
     top: 65%; }
     body .name h2, body .name h3 {
       color: #f7b480; }
-
-p {
-  font-weight: 900; }
 
 /*# sourceMappingURL=styles.css.map */
