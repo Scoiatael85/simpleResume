@@ -48,15 +48,12 @@ body {
       body .social .icons img {
         width: 50px; }
   body .contactHeader {
-    background-image: url("../images/imagination.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 810px;
     max-width: 1440px; }
+    body .contactHeader #bg {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; }
     body .contactHeader .name {
       position: absolute;
       left: 15px;
@@ -64,6 +61,7 @@ body {
       body .contactHeader .name h1, body .contactHeader .name h2, body .contactHeader .name h3 {
         color: white; }
   body .projects {
+    padding: 40px 0;
     text-align: center;
     width: 60%;
     margin: auto; }
@@ -71,6 +69,9 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
+      body .projects .projectFlex a {
+        text-decoration: none;
+        color: black; }
     body .projects .projectItem {
       position: relative;
       width: 200px;
@@ -94,7 +95,8 @@ body {
         margin-top: 35px; }
   body .experience {
     padding: 40px 0;
-    padding: 20px 0 40px 0; }
+    padding: 20px 0 40px 0;
+    clear: both; }
     body .experience .companybox {
       margin: auto;
       display: block;
@@ -116,7 +118,8 @@ body {
         body .experience .companybox .details p {
           margin-left: 10px; }
   body .interests {
-    margin: 40px 0; }
+    background-color: #DCDCDC;
+    padding: 20px 0 40px 0; }
     body .interests .myInterests {
       width: 285px;
       margin: auto;
@@ -131,7 +134,53 @@ body {
           height: 25px;
           display: inline-block;
           margin: 0 10px 0 0; }
+  body .skills {
+    padding: 20px 0 40px 0;
+    background-color: #DCDCDC; }
+    body .skills .skillsflex {
+      display: flex; }
+      @media (max-width: 600px) {
+        body .skills .skillsflex {
+          display: block; } }
+      body .skills .skillsflex .set1 {
+        display: flex;
+        width: 50%; }
+        @media (max-width: 600px) {
+          body .skills .skillsflex .set1 {
+            width: 100%; } }
+        body .skills .skillsflex .set1 .set1text {
+          font-size: 1.2em;
+          margin-left: 10%;
+          width: 50%; }
+          @media (max-width: 600px) {
+            body .skills .skillsflex .set1 .set1text {
+              margin-left: 5%; } }
+        body .skills .skillsflex .set1 .set1img {
+          width: 50%; }
+          body .skills .skillsflex .set1 .set1img img {
+            margin: 0 5px; }
+      body .skills .skillsflex .set2 {
+        display: flex;
+        width: 50%; }
+        @media (max-width: 600px) {
+          body .skills .skillsflex .set2 {
+            width: 100%; } }
+        body .skills .skillsflex .set2 .set2text {
+          font-size: 1.2em;
+          margin-left: 10%;
+          width: 50%; }
+          @media (max-width: 600px) {
+            body .skills .skillsflex .set2 .set2text {
+              margin-left: 5%; } }
+        body .skills .skillsflex .set2 .set2img {
+          width: 50%; }
+          body .skills .skillsflex .set2 .set2img img {
+            margin: 0 5px; }
+      body .skills .skillsflex ul li {
+        margin: 5px 0;
+        list-style: none; }
   body .breaker {
+    clear: both;
     margin: 20px 0;
     height: 25px;
     background-image: url(../images/d20.png), url(../images/d20.png), url(../images/d20.png);

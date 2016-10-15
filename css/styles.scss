@@ -62,15 +62,13 @@ body{
 		
 	}
 	.contactHeader {
-		background-image: url("../images/imagination.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-	  	-webkit-background-size: cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
-		background-size: cover;
-		height: 810px;
 		max-width: 1440px;
+		#bg {
+			  display: block;
+			  width: 100vw;
+			  height: 100vh;
+			  object-fit: cover;
+		}
 		.name {
 			position: absolute;
 			left: 15px;
@@ -81,10 +79,15 @@ body{
 		}
 	}
 	.projects {
+		padding: 40px 0;
 		text-align: center;
 		width: 60%;
 		margin: auto;
 		.projectFlex {
+			a{
+				text-decoration: none;
+				color: black;
+			}
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -145,9 +148,11 @@ body{
 				}
 			}
 		}
+		clear: both;
 	}
 	.interests{
-		margin: 40px 0;
+		background-color: #DCDCDC;
+		padding: 20px 0 40px 0;
 		.myInterests{
 			width: 285px;
 			margin: auto;
@@ -168,7 +173,66 @@ body{
 			}
 		}
 	}
+	.skills{
+		padding: 20px 0 40px 0;
+		background-color: #DCDCDC;
+		.skillsflex{
+			display: flex;
+			@media (max-width: 600px){
+				display: block;
+			}
+			.set1{
+				display: flex;
+				width: 50%;
+				@media (max-width: 600px){
+					width: 100%;
+				}
+				.set1text{
+					font-size: 1.2em;
+					margin-left: 10%;
+					width: 50%;
+					@media (max-width: 600px){
+						margin-left: 5%;
+					}
+				}
+				.set1img{
+					img{
+						margin: 0 5px;
+					}				
+					width:50%;
+				}
+			}
+			.set2{
+				display: flex;
+				width: 50%;
+				@media (max-width: 600px){
+					width: 100%;
+				}
+				.set2text{
+					font-size: 1.2em;
+					margin-left: 10%;
+					width: 50%;
+					@media (max-width: 600px){
+						margin-left: 5%;
+					}
+				}
+				.set2img{
+					img{
+						margin: 0 5px;
+					}
+					width:50%;
+				}
+			}
+			ul{
+				li{
+					margin: 5px 0;
+					list-style: none;
+				}
+			}
+		}
+	}
 	.breaker{
+		clear: both;
 		margin: 20px 0;
 		height: 25px;
 		background-image: url(../images/d20.png),
