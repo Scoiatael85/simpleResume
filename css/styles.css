@@ -92,18 +92,29 @@ body {
       body .projects .projectItem p {
         color: white;
         margin-top: 35px; }
-  body .experience .companybox {
-    margin: auto;
-    display: block;
-    width: 80%; }
-    body .experience .companybox .company {
-      width: 30%;
-      display: inline-block; }
-      body .experience .companybox .company h2 {
-        font-size: 1.5em; }
-    body .experience .companybox .details {
-      width: 70%;
-      display: inline-block; }
+  body .experience {
+    padding: 40px 0;
+    padding: 20px 0 40px 0; }
+    body .experience .companybox {
+      margin: auto;
+      display: block;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap; }
+      @media (max-width: 700px) {
+        body .experience .companybox {
+          display: block;
+          text-align: center; } }
+      body .experience .companybox .company {
+        width: 30%;
+        margin: auto; }
+        body .experience .companybox .company h2 {
+          font-size: 1.5em; }
+      body .experience .companybox .details {
+        width: 70%;
+        margin: inherit; }
+        body .experience .companybox .details p {
+          margin-left: 10px; }
   body .interests {
     margin: 40px 0; }
     body .interests .myInterests {
