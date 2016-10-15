@@ -56,5 +56,39 @@ body {
     top: 65%; }
     body .name h2, body .name h3 {
       color: #f7b480; }
+  body .experience h1 {
+    text-align: center;
+    color: #5D2E8C; }
+  body .experience .companybox {
+    margin: auto;
+    display: block;
+    width: 80%; }
+    body .experience .companybox .company {
+      width: 30%;
+      display: inline-block; }
+      body .experience .companybox .company h2 {
+        font-size: 1.5em; }
+    body .experience .companybox .details {
+      width: 70%;
+      display: inline-block; }
+  body .interests {
+    margin: 40px 0; }
+    body .interests h1 {
+      text-align: center;
+      color: #5D2E8C; }
+    body .interests .myInterests {
+      width: 285px;
+      margin: auto;
+      list-style: none; }
+      body .interests .myInterests li {
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle; }
+        body .interests .myInterests li p {
+          display: inline-block; }
+        body .interests .myInterests li img {
+          height: 25px;
+          display: inline-block;
+          margin: 0 10px 0 0; }
 
 /*# sourceMappingURL=styles.css.map */
