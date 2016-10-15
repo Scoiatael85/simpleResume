@@ -159,4 +159,20 @@ body{
 			}
 		}
 	}
+	.breaker{
+		margin: 20px 0;
+		height: 25px;
+		background-image: url(../images/d20.png),
+						  url(../images/d20.png),
+						  url(../images/d20.png);
+		background-size: 25px 25px,
+						 25px 25px,
+						 25px 25px;
+		background-repeat: no-repeat, 
+		                   no-repeat,
+		                   no-repeat;
+       	background-position: 50%, 
+                            70%,
+                            30%;
+}
 }
