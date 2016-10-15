@@ -72,10 +72,33 @@ body{
 			color: #f7b480;
 		}
 	}
+	.experience{
+		h1{
+			text-align: center;
+			color: #5D2E8C;
+		}
+		.companybox{
+			margin: auto;
+			display: block;
+			width: 80%;
+			.company{
+				width: 30%;
+				display: inline-block;
+				h2{
+					font-size: 1.5em;
+				}
+			}
+			.details{
+				width: 70%;
+				display: inline-block
+			}
+		}
+	}
 	.interests{
 		margin: 40px 0;
 		h1{
 			text-align: center;
+			color: #5D2E8C;
 		}
 		.myInterests{
 			width: 285px;
