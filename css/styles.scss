@@ -1,6 +1,10 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	max-width: 1440px;
+	h1{
+	text-align: center;
+	color: #5D2E8C;
+	}
 	.contactme{
 		height: 150px;
 		color: white;
@@ -77,12 +81,14 @@ body{
 		}
 	}
 	.projects {
-		display: flex;
-		flex-wrap: wrap;
 		text-align: center;
-		justify-content: center;
 		width: 60%;
 		margin: auto;
+		.projectFlex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		}
 		.projectItem {
 			position: relative;
 			.projectHover{
@@ -112,10 +118,6 @@ body{
 		}
 	}
 	.experience{
-		h1{
-			text-align: center;
-			color: #5D2E8C;
-		}
 		.companybox{
 			margin: auto;
 			display: block;
@@ -135,10 +137,6 @@ body{
 	}
 	.interests{
 		margin: 40px 0;
-		h1{
-			text-align: center;
-			color: #5D2E8C;
-		}
 		.myInterests{
 			width: 285px;
 			margin: auto;

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighton Times</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          The Brighton Times
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">Events</a></li>
+        <li class="nav__item"><a href="#">Culture</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2 class="highlight">Absolutely astonishing breaking news!</h2>
+            <h3 class="highlight">Absolutely astonishing breaking news!</h3>
+            <p>Teenage girl save a litter of spotted puppies from CRUEL-la DEVIL-le! </p>
+            <p>Local family rewards her with stuffed dog bigger than she is.</p>
+          </article>
+        </section>
+
+        <section class="news top-news">
+        <div id="news-title">
+          <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
+        </div>
+        <div id="news-head">
+          <ul>
+            <li class="top-news__item">
+              <a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a>
+            </li>
+          </ul>
+        </div>
+        <div id="news-tail">
+          <ul>
+            <li class="top-news__item">
+              <a href="#">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a>
+             </li>
+          </ul>
+        </div>
+        </section>
+
+        <section class="scores">
+        <div class="contained_table">
+          <table class="scores__table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>AFC East</th>
+                <th colspan="3">Win / Loss / Tie</th>
+                <th>PCT</th>
+                <th>PF</th>
+                <th>PA</th>
+                <th>HOME</th>
+                <th>ROAD</th>
+                <th>STRK</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="winner">1</td>
+                <td class="winner team"><img class="team-logo" src="data:image/png;base64,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">Patriots</td>
+                <td class="winner">12</td>
+                <td class="winner">4</td>
+                <td class="winner">0</td>
+                <td class="winner">.750</td>
+                <td class="winner">465</td>
+                <td class="winner">315</td>
+                <td class="winner">7-1-0</td>
+                <td class="winner">5-3-0</td>
+                <td class="winner">L2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="team"><img class="team-logo" src="data:image/png;base64,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">Jets</td>
+                <td>10</td>
+                <td>6</td>
+                <td>0</td>
+                <td>.625</td>
+                <td>387</td>
+                <td>314</td>
+                <td>6-2-0</td>
+                <td>4-4-0</td>
+                <td>L1</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="team"><img class="team-logo" src="data:image/png;base64,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">Bills</td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td>.500</td>
+                <td>379</td>
+                <td>359</td>
+                <td>5-3-0</td>
+                <td>3-5-0</td>
+                <td>W2</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="team"><img class="team-logo" src="data:image/png;base64,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">Dolphins</td>
+                <td>6</td>
+                <td>10</td>
+                <td>0</td>
+                <td>.375</td>
+                <td>310</td>
+                <td>389</td>
+                <td>3-5-0</td>
+                <td>3-5-0</td>
+                <td>W1</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        </section>
+
+        <section class="weather">
+          <span class="weather__location">Brighton, UK</span>
+          <span class="weather__desc">Sunny</span>
+          <span class="weather__today">
+          <img class="weather__today__image" src="images/weather.png" alt="icon of a partially sunny day"><span class="weather__today__temp">13</span><span class="weather__today__deg">&deg;C</span>
+          </span>
+          <ul class="weather__next">
+            <li class="weather__next__item">
+              <span>Mon</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Tues</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Wed</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Thu</span>
+              <img class="weather__next__image" src="images/rain.png" alt="icon of a rainy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Fri</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news recent-news">
+          <h2 class="news__title">Latest news <a href="#" class="news__more">+ more</a></h2>
+          <ul class="content">
+            <li class="snippet" id="snip-1">
+              <picture>
+                <source media="(min-width: 1100px)" srcset="images/dog-girl-xs.jpg">
+                <source media="(min-width: 361px)" srcset="images/dog.jpg">
+                  <img class="snippet__thumbnail" src="images/dog.jpg" srcset="images/dog-girl.jpg" alt="picture of a girl with a large, stuffed dog toy">  
+              </picture>
+              <h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet" id="snip-2">
+              <picture>
+                <source media="(min-width: 1100px)" srcset="images/dog-girl-xs.jpg">
+                <source media="(min-width: 361px)" srcset="images/dog.jpg">
+                  <img class="snippet__thumbnail" src="images/dog.jpg" srcset="images/dog-girl.jpg" alt="picture of a girl with a large, stuffed dog toy">  
+              </picture>
+              <h3 class="snippet__title"><a href="#">Organic raw keffiyeh four loko.</a></h3>
+              <p>Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice loko.
+              </p>
+            </li>
+            <li class="snippet" id="snip-3">
+              <picture>
+                <source media="(min-width: 1100px)" srcset="images/dog-girl-xs.jpg">
+                <source media="(min-width: 361px)" srcset="images/dog.jpg">
+                  <img class="snippet__thumbnail" src="images/dog.jpg" srcset="images/dog-girl.jpg" alt="picture of a girl with a large, stuffed dog toy">  
+              </picture>
+              <h3 class="snippet__title"><a href="#">Kickstarter art party cronut scenester.</a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet" id="snip-4">
+              <picture>
+                <source media="(min-width: 1100px)" srcset="images/dog-girl-xs.jpg">
+                <source media="(min-width: 361px)" srcset="images/dog.jpg">
+                  <img class="snippet__thumbnail" src="images/dog.jpg" srcset="images/dog-girl.jpg" alt="picture of a girl with a large, stuffed dog toy">  
+              </picture>
+              <h3 class="snippet__title"><a href="#">Squid lomo Kickstarter art party cronut </a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
