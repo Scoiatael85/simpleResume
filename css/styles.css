@@ -1,6 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   max-width: 1440px; }
+  body h1 {
+    text-align: center;
+    color: #5D2E8C; }
   body .contactme {
     height: 150px;
     color: white;
@@ -61,12 +64,13 @@ body {
       body .contactHeader .name h1, body .contactHeader .name h2, body .contactHeader .name h3 {
         color: white; }
   body .projects {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
     width: 60%;
     margin: auto; }
+    body .projects .projectFlex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
     body .projects .projectItem {
       position: relative;
       width: 200px;
@@ -88,9 +92,6 @@ body {
       body .projects .projectItem p {
         color: white;
         margin-top: 35px; }
-  body .experience h1 {
-    text-align: center;
-    color: #5D2E8C; }
   body .experience .companybox {
     margin: auto;
     display: block;
@@ -105,9 +106,6 @@ body {
       display: inline-block; }
   body .interests {
     margin: 40px 0; }
-    body .interests h1 {
-      text-align: center;
-      color: #5D2E8C; }
     body .interests .myInterests {
       width: 285px;
       margin: auto;
