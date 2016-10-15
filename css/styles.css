@@ -10,10 +10,10 @@ body {
     max-width: 1440px; }
   body .name {
     position: absolute;
-    left: 25%;
-    top: 65%; }
-    body .name h2, body .name h3 {
-      color: #f7b480; }
+    left: 15%;
+    top: 50%; }
+    body .name h1, body .name h2, body .name h3 {
+      color: white; }
 
 p {
   font-weight: 900; }
