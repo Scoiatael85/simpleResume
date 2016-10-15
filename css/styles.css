@@ -56,5 +56,23 @@ body {
     top: 65%; }
     body .name h2, body .name h3 {
       color: #f7b480; }
+  body .interests {
+    margin: 40px 0; }
+    body .interests h1 {
+      text-align: center; }
+    body .interests .myInterests {
+      width: 285px;
+      margin: auto;
+      list-style: none; }
+      body .interests .myInterests li {
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle; }
+        body .interests .myInterests li p {
+          display: inline-block; }
+        body .interests .myInterests li img {
+          height: 25px;
+          display: inline-block;
+          margin: 0 10px 0 0; }
 
 /*# sourceMappingURL=styles.css.map */

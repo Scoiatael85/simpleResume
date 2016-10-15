@@ -72,4 +72,29 @@ body{
 			color: #f7b480;
 		}
 	}
+	.interests{
+		margin: 40px 0;
+		h1{
+			text-align: center;
+		}
+		.myInterests{
+			width: 285px;
+			margin: auto;
+			list-style: none;
+			li{
+				height: 40px;
+				line-height: 40px;
+				vertical-align: middle;
+
+				p{
+					display: inline-block;
+				}
+				img{
+					height: 25px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+	}
 }
