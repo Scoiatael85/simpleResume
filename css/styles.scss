@@ -29,4 +29,19 @@ body{
 
 		}
 	}
+	.contactHeader {
+		background-image: url("../images/imagination.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 810px;
+		max-width: 1440px;
+	}
+	.name {
+		position: absolute;
+		left: 25%;
+		top: 65%;
+		h2, h3 {
+			color: #f7b480;
+		}
+	}
 }
