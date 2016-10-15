@@ -94,49 +94,57 @@ body{
 
 
 	}
-	.projects {
-		padding: 40px 0;
-		text-align: center;
-		width: 70%;
-		margin: auto;
-		.projectFlex {
-			a{
-				text-decoration: none;
-				color: black;
-			}
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		}
-		.projectItem {
-			position: relative;
-			.projectHover{
-				position: absolute;
-				background-color: purple;
-				z-index: 100;
-				opacity: 0;
-				height: 150px;
-				width: 200px;
-			    transition: opacity .75s ease-in-out;
-			    -moz-transition: opacity .75s ease-in-out;
-			    -webkit-transition: opacity .75s ease-in-out;
-				&:hover{
-					opacity: .7;
+	.projectcontain{
+		background-color: #DCDCDC;
+		.projects {
+			padding: 40px 0;
+			text-align: center;
+			width: 70%;
+			margin: auto;
+			.projectFlex {
+				a{
+					text-decoration: none;
+					color: black;
 				}
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			}
+			.projectItem {
+				position: relative;
+				.projectHover{
+					position: absolute;
+					background-color: purple;
+					z-index: 100;
+					opacity: 0;
+					height: 150px;
+					width: 200px;
+				    transition: opacity .75s ease-in-out;
+				    -moz-transition: opacity .75s ease-in-out;
+				    -webkit-transition: opacity .75s ease-in-out;
+					&:hover{
+						opacity: .7;
+					}
 
-			}
-			width: 200px;
-			height: 200px;
-			.projectImg {
-				width: 150px;
-			}
-			p{
-				color: white;
-				margin-top: 35px;
+				}
+				width: 200px;
+				height: 200px;
+				#sqlImage{
+					height: 150px;
+					width: auto !important;
+				}
+				.projectImg {
+					width: 150px;
+				}
+				p{
+					color: white;
+					margin-top: 35px;
+				}
 			}
 		}
 	}
 	.experience{
+		background-color: #DCDCDC;
 		  padding: 40px 0;
 		  padding: 20px 0 40px 0;
 		.companybox{
@@ -176,7 +184,6 @@ body{
 		clear: both;
 	}
 	.interests{
-		background-color: #DCDCDC;
 		padding: 20px 0 40px 0;
 		.myInterests{
 			width: 285px;
@@ -200,7 +207,6 @@ body{
 	}
 	.skills{
 		padding: 20px 0 40px 0;
-		background-color: #DCDCDC;
 		.skillsflex{
 			display: flex;
 			@media (max-width: 600px){
