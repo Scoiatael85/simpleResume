@@ -1,3 +1,9 @@
+body {
+  max-width: 1440px; }
+  body p {
+    font-size: 20px; }
 
+p {
+  font-weight: 900; }
 
 /*# sourceMappingURL=styles.css.map */
