@@ -2,19 +2,27 @@ body{
 	font-family: 'Roboto', sans-serif;
 	max-width: 1440px;
 	.contactme{
-		height: 100px;
+		height: 150px;
 		color: white;
 		background-color: #F76025;
+		@media (max-width: 600px){
+			height: 250px;
+		}
+		
 		.contactInfo{
-			padding-top: 23px;
-			margin-left: 40px;
+			padding-top: 35px;
 			width: 50%;
+			float: left;
+			font-size: 1.5em;
+			@media (max-width: 600px){
+				width: 100%;
+			}
 			.floatbox{
 				margin: auto;
 				display: block;
 				width: 150px;
 				a{
-					line-height: 23px;
+					line-height: 38px;					
 					margin-left: 10px;
 					float: left;
 					color: white;
@@ -23,11 +31,31 @@ body{
 				span{
 					float: left;
 					clear: both;
+					.material-icons{
+						font-size: 34px;
+					}
 
 				}
 			}
 
 		}
+	}
+	.social{
+		width: 50%;
+		padding-top: 50px;		
+		float: left;
+		@media (max-width: 600px){
+			width: 100%;
+		}
+		.icons{
+			display: block;
+			width: 170px;
+			margin: auto;
+			img{
+				width:50px;
+			}
+		}
+		
 	}
 	.contactHeader {
 		background-image: url("../images/imagination.jpg");
@@ -83,5 +111,52 @@ body{
 			}
 		}
 	}
+	.experience{
+		h1{
+			text-align: center;
+			color: #5D2E8C;
+		}
+		.companybox{
+			margin: auto;
+			display: block;
+			width: 80%;
+			.company{
+				width: 30%;
+				display: inline-block;
+				h2{
+					font-size: 1.5em;
+				}
+			}
+			.details{
+				width: 70%;
+				display: inline-block
+			}
+		}
+	}
+	.interests{
+		margin: 40px 0;
+		h1{
+			text-align: center;
+			color: #5D2E8C;
+		}
+		.myInterests{
+			width: 285px;
+			margin: auto;
+			list-style: none;
+			li{
+				height: 40px;
+				line-height: 40px;
+				vertical-align: middle;
 
+				p{
+					display: inline-block;
+				}
+				img{
+					height: 25px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+	}
 }

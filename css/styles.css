@@ -2,19 +2,26 @@ body {
   font-family: 'Roboto', sans-serif;
   max-width: 1440px; }
   body .contactme {
-    height: 100px;
+    height: 150px;
     color: white;
     background-color: #F76025; }
+    @media (max-width: 600px) {
+      body .contactme {
+        height: 250px; } }
     body .contactme .contactInfo {
-      padding-top: 23px;
-      margin-left: 40px;
-      width: 50%; }
+      padding-top: 35px;
+      width: 50%;
+      float: left;
+      font-size: 1.5em; }
+      @media (max-width: 600px) {
+        body .contactme .contactInfo {
+          width: 100%; } }
       body .contactme .contactInfo .floatbox {
         margin: auto;
         display: block;
         width: 150px; }
         body .contactme .contactInfo .floatbox a {
-          line-height: 23px;
+          line-height: 38px;
           margin-left: 10px;
           float: left;
           color: white;
@@ -22,6 +29,21 @@ body {
         body .contactme .contactInfo .floatbox span {
           float: left;
           clear: both; }
+          body .contactme .contactInfo .floatbox span .material-icons {
+            font-size: 34px; }
+  body .social {
+    width: 50%;
+    padding-top: 50px;
+    float: left; }
+    @media (max-width: 600px) {
+      body .social {
+        width: 100%; } }
+    body .social .icons {
+      display: block;
+      width: 170px;
+      margin: auto; }
+      body .social .icons img {
+        width: 50px; }
   body .contactHeader {
     background-image: url("../images/imagination.jpg");
     background-position: center center;
@@ -66,5 +88,39 @@ body {
       body .projects .projectItem p {
         color: white;
         margin-top: 35px; }
+  body .experience h1 {
+    text-align: center;
+    color: #5D2E8C; }
+  body .experience .companybox {
+    margin: auto;
+    display: block;
+    width: 80%; }
+    body .experience .companybox .company {
+      width: 30%;
+      display: inline-block; }
+      body .experience .companybox .company h2 {
+        font-size: 1.5em; }
+    body .experience .companybox .details {
+      width: 70%;
+      display: inline-block; }
+  body .interests {
+    margin: 40px 0; }
+    body .interests h1 {
+      text-align: center;
+      color: #5D2E8C; }
+    body .interests .myInterests {
+      width: 285px;
+      margin: auto;
+      list-style: none; }
+      body .interests .myInterests li {
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle; }
+        body .interests .myInterests li p {
+          display: inline-block; }
+        body .interests .myInterests li img {
+          height: 25px;
+          display: inline-block;
+          margin: 0 10px 0 0; }
 
 /*# sourceMappingURL=styles.css.map */
