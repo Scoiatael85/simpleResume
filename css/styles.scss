@@ -31,17 +31,57 @@ body{
 	}
 	.contactHeader {
 		background-image: url("../images/imagination.jpg");
-		background-size: contain;
+		background-position: center center;
 		background-repeat: no-repeat;
+	  	-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-size: cover;
 		height: 810px;
 		max-width: 1440px;
-	}
-	.name {
-		position: absolute;
-		left: 15%;
-		top: 50%;
-		h1, h2, h3 {
-			color: white;
+		.name {
+			position: absolute;
+			left: 15px;
+			top: 250px;
+			h1, h2, h3 {
+				color: white;
+			}
 		}
 	}
+	.projects {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		width: 60%;
+		margin: auto;
+		.projectItem {
+			position: relative;
+			.projectHover{
+				position: absolute;
+				background-color: purple;
+				z-index: 100;
+				opacity: 0;
+				height: 150px;
+				width: 200px;
+			    transition: opacity .75s ease-in-out;
+			    -moz-transition: opacity .75s ease-in-out;
+			    -webkit-transition: opacity .75s ease-in-out;
+				&:hover{
+					opacity: .7;
+				}
+
+			}
+			width: 200px;
+			height: 200px;
+			.projectImg {
+				width: 150px;
+			}
+			p{
+				color: white;
+				margin-top: 35px;
+			}
+		}
+	}
+
 }

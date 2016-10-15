@@ -24,15 +24,47 @@ body {
           clear: both; }
   body .contactHeader {
     background-image: url("../images/imagination.jpg");
-    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 810px;
     max-width: 1440px; }
-  body .name {
-    position: absolute;
-    left: 15%;
-    top: 50%; }
-    body .name h1, body .name h2, body .name h3 {
-      color: white; }
+    body .contactHeader .name {
+      position: absolute;
+      left: 15px;
+      top: 250px; }
+      body .contactHeader .name h1, body .contactHeader .name h2, body .contactHeader .name h3 {
+        color: white; }
+  body .projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto; }
+    body .projects .projectItem {
+      position: relative;
+      width: 200px;
+      height: 200px; }
+      body .projects .projectItem .projectHover {
+        position: absolute;
+        background-color: purple;
+        z-index: 100;
+        opacity: 0;
+        height: 150px;
+        width: 200px;
+        transition: opacity .75s ease-in-out;
+        -moz-transition: opacity .75s ease-in-out;
+        -webkit-transition: opacity .75s ease-in-out; }
+        body .projects .projectItem .projectHover:hover {
+          opacity: .7; }
+      body .projects .projectItem .projectImg {
+        width: 150px; }
+      body .projects .projectItem p {
+        color: white;
+        margin-top: 35px; }
 
 /*# sourceMappingURL=styles.css.map */
