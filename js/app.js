@@ -50,3 +50,9 @@ $.each(work, function (i, value) {
 	)
 })
 
+  $(function(){
+      $(".quote").typed({
+        strings: ['"Imagination will often carry us to worlds that never were, but without it we go nowhere." </br></br> ― Carl Sagan', '“Everything you can imagine is real.” </br></br> ― Pablo Picasso"', '"Imagination has no age. And dreams are forever.” </br></br> ― Walt Disney', '“Imagination should be used, not to escape reality but to create it.” </br></br> ― Colin Wilson', '"Reality leaves a lot to the imagination." </br></br> - John Lennon', '“Imagination is more important than knowledge... For knowledge is limited to all we now know and understand, while imagination embraces the entire world.” </br></br> - Albert Einstein'],
+        typeSpeed: 0
+      });
+  });

@@ -54,16 +54,29 @@ body {
       width: 100vw;
       height: 100vh;
       object-fit: cover; }
+    body .contactHeader h1, body .contactHeader h2, body .contactHeader h3 {
+      color: white; }
     body .contactHeader .name {
       position: absolute;
+      text-align: center;
+      width: 200px;
+      right: 10%;
+      top: 75px; }
+    body .contactHeader .quoteBox {
+      position: absolute;
+      width: 40%;
       left: 15px;
-      top: 250px; }
-      body .contactHeader .name h1, body .contactHeader .name h2, body .contactHeader .name h3 {
-        color: white; }
+      top: 350px; }
+      @media (max-width: 700px) {
+        body .contactHeader .quoteBox {
+          top: 200px; } }
+      @media (max-width: 740px) and (orientation: landscape) {
+        body .contactHeader .quoteBox {
+          top: 50px; } }
   body .projects {
     padding: 40px 0;
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin: auto; }
     body .projects .projectFlex {
       display: flex;
@@ -112,11 +125,19 @@ body {
         margin: auto; }
         body .experience .companybox .company h2 {
           font-size: 1.5em; }
+        @media (max-width: 700px) {
+          body .experience .companybox .company {
+            width: 100%; } }
       body .experience .companybox .details {
         width: 70%;
         margin: inherit; }
         body .experience .companybox .details p {
           margin-left: 10px; }
+        @media (max-width: 700px) {
+          body .experience .companybox .details {
+            width: 100%; } }
+        body .experience .companybox .details li {
+          text-align: left; }
   body .interests {
     background-color: #DCDCDC;
     padding: 20px 0 40px 0; }

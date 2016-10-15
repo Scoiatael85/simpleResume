@@ -69,19 +69,35 @@ body{
 			  height: 100vh;
 			  object-fit: cover;
 		}
+		h1, h2, h3 {
+			color: white;
+		}
 		.name {
 			position: absolute;
+			text-align: center;
+			width: 200px;
+			right: 10%;
+			top: 75px;
+			}
+		.quoteBox {
+			position: absolute;
+			width: 40%;
 			left: 15px;
-			top: 250px;
-			h1, h2, h3 {
-				color: white;
+			top: 350px;
+			@media (max-width: 700px){
+				top: 200px;
+			}
+			@media (max-width: 740px) and (orientation: landscape){
+				top: 50px;
 			}
 		}
+
+
 	}
 	.projects {
 		padding: 40px 0;
 		text-align: center;
-		width: 60%;
+		width: 70%;
 		margin: auto;
 		.projectFlex {
 			a{
@@ -139,12 +155,21 @@ body{
 				h2{
 					font-size: 1.5em;
 				}
+				@media (max-width: 700px){
+					width: 100%;
+				}
 			}
 			.details{
 				width: 70%;
 				margin: inherit;
 				p {
 					margin-left: 10px; 
+				}
+				@media (max-width: 700px){
+					width: 100%;
+				}
+				li{
+					text-align: left;
 				}
 			}
 		}
