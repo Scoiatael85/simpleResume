@@ -73,7 +73,7 @@ $('.projectLink').on('click', function () {
 	console.log($(this).attr('href'))
 	var link =$(this).attr('href')
 	if (link !== '#') {
-		setInterval(function(){ 
+		setTimeout(function(){ 
 			window.location.href = link;
 			return false;
 		}, 1000);
