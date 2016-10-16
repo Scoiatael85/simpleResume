@@ -3,17 +3,17 @@ var work = [
  			"employer" : "99 Restaurants",
  			"title" : "R&D/Training, First Assistant Manager",
  			"dates" : "July, 2012 - Current",
- 			"location" : "Attleboro, Mass",
+ 			"location" : "Attleboro, MA",
  			"description" : [
- 							"Expert with the Aloha and New Journal Entries systems: Maintains and updates inventory master for smooth and clean inventory/reconciliation process",
- 							"Intimate knowledge of pmix analysis to determine weekly pars/ordering as well as focuses to increase sales",
- 							"Routine inspection of Aloha and NJE communication to guarantee back office and home office network alignment"
+ 							"Expert with the Aloha and New Journal Entries systems: Maintains and updates inventory master for smooth and clean inventory/reconciliation process.",
+ 							"Intimate knowledge of pmix analysis to determine weekly pars/ordering as well as focuses to increase sales.",
+ 							"Guarantees back office and home office network alignment through routine inspections of Aloha and NJE communication."
  							]
  		},
- 		{	"employer" : "Unos Chicago Bar & Grille",
+ 		{	"employer" : "Uno Chicago Bar & Grille",
  			"title" : "Assistant General Manager/Marketing Manager",
- 			"dates" : "Sept, 2008 - July, 2012",
- 			"location" : "Portland, Maine",
+ 			"dates" : "September, 2008 - July, 2012",
+ 			"location" : "Portland, ME",
  			"description" : [
  							"Cultivated strong community partnerships through fundraising efforts with 30K annual revenue stream.",
  							"Implemented successful onboarding/development processes to support staff in beginning management responsibilities.",
@@ -22,8 +22,8 @@ var work = [
  		},
  		{	"employer" : "Ruby Tuesday",
  			"title" : "Assistant General Manager",
- 			"dates" : "Aug, 2004 - Sept, 2008",
- 			"location" : "Taunton, Mass",
+ 			"dates" : "August, 2004 - September, 2008",
+ 			"location" : "Taunton, MA",
  			"description" : [
  							"Implemented a pilot training program (“Path to Success”) for 40+ staff members.",
  							"Responsible for all aspects of store level inventory ordering, budgeting and analysis.",
