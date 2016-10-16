@@ -73,40 +73,46 @@ body {
       @media (max-width: 740px) and (orientation: landscape) {
         body .contactHeader .quoteBox {
           top: 50px; } }
-  body .projects {
-    padding: 40px 0;
-    text-align: center;
-    width: 70%;
-    margin: auto; }
-    body .projects .projectFlex {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      body .projects .projectFlex a {
-        text-decoration: none;
-        color: black; }
-    body .projects .projectItem {
-      position: relative;
-      width: 200px;
-      height: 200px; }
-      body .projects .projectItem .projectHover {
-        position: absolute;
-        background-color: purple;
-        z-index: 100;
-        opacity: 0;
-        height: 150px;
+  body .projectcontain {
+    background-color: #DCDCDC; }
+    body .projectcontain .projects {
+      padding: 40px 0;
+      text-align: center;
+      width: 70%;
+      margin: auto; }
+      body .projectcontain .projects .projectFlex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        body .projectcontain .projects .projectFlex a {
+          text-decoration: none;
+          color: black; }
+      body .projectcontain .projects .projectItem {
+        position: relative;
         width: 200px;
-        transition: opacity .75s ease-in-out;
-        -moz-transition: opacity .75s ease-in-out;
-        -webkit-transition: opacity .75s ease-in-out; }
-        body .projects .projectItem .projectHover:hover {
-          opacity: .7; }
-      body .projects .projectItem .projectImg {
-        width: 150px; }
-      body .projects .projectItem p {
-        color: white;
-        margin-top: 35px; }
+        height: 200px; }
+        body .projectcontain .projects .projectItem .projectHover {
+          position: absolute;
+          background-color: purple;
+          z-index: 100;
+          opacity: 0;
+          height: 150px;
+          width: 200px;
+          transition: opacity .75s ease-in-out;
+          -moz-transition: opacity .75s ease-in-out;
+          -webkit-transition: opacity .75s ease-in-out; }
+          body .projectcontain .projects .projectItem .projectHover:hover {
+            opacity: .7; }
+        body .projectcontain .projects .projectItem #sqlImage {
+          height: 150px;
+          width: auto !important; }
+        body .projectcontain .projects .projectItem .projectImg {
+          width: 150px; }
+        body .projectcontain .projects .projectItem p {
+          color: white;
+          margin-top: 35px; }
   body .experience {
+    background-color: #DCDCDC;
     padding: 40px 0;
     padding: 20px 0 40px 0;
     clear: both; }
@@ -139,7 +145,6 @@ body {
         body .experience .companybox .details li {
           text-align: left; }
   body .interests {
-    background-color: #DCDCDC;
     padding: 20px 0 40px 0; }
     body .interests .myInterests {
       width: 285px;
@@ -156,8 +161,7 @@ body {
           display: inline-block;
           margin: 0 10px 0 0; }
   body .skills {
-    padding: 20px 0 40px 0;
-    background-color: #DCDCDC; }
+    padding: 20px 0 40px 0; }
     body .skills .skillsflex {
       display: flex; }
       @media (max-width: 600px) {
