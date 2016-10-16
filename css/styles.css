@@ -65,6 +65,9 @@ body {
       width: 200px;
       right: 10%;
       top: 75px; }
+      body .contactHeader .name a {
+        cursor: pointer;
+        text-decoration: none; }
       @media screen and (max-device-width: 740px) and (orientation: landscape) {
         body .contactHeader .name {
           top: 25px; } }
@@ -106,6 +109,9 @@ body {
           color: black;
           padding-left: 10px; }
       body .projectcontain .projects .projectItem {
+        -vendor-animation-duration: 3s;
+        -vendor-animation-delay: 2s;
+        -vendor-animation-iteration-count: infinite;
         position: relative;
         width: 200px;
         height: 200px; }

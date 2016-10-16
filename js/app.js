@@ -56,3 +56,70 @@ $.each(work, function (i, value) {
         typeSpeed: 0
       });
   });
+
+  $.fn.extend({
+      animateCss: function (animationName) {
+          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+          this.addClass('animated ' + animationName).one(animationEnd, function() {
+              $(this).removeClass('animated ' + animationName);
+          });
+      }
+  });
+
+$('.projectLink').on('click', function () {
+	event.preventDefault();
+	console.log(this)
+	$(this).animateCss('tada');
+	console.log($(this).attr('href'))
+	var link =$(this).attr('href')
+	if (link !== '#') {
+		setInterval(function(){ 
+			window.location.href = link;
+			return false;
+		}, 1000);
+	}	 
+})
+
+// $.fn.inView = function(){
+//     //Window Object
+//     var win = $(window);
+//     //Object to Check
+//     obj = $(this);
+//     //the top Scroll Position in the page
+//     var scrollPosition = win.scrollTop();
+//     //the end of the visible area in the page, starting from the scroll position
+//     var visibleArea = win.scrollTop() + win.height();
+//     //the end of the object to check
+//     var objEndPos = (obj.offset().top + obj.outerHeight());
+//     return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
+// };
+$.fn.isOnScreen = function(){
+    
+    var win = $(window);
+    
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+    
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+    
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+    }
+
+$(window).scroll(function(){
+	if ($('.dice').isOnScreen()){
+			$(".dice").animateCss('rollIn');
+	} else {
+		console.log(false)
+		console.log($('.dice').hasClass('.rollIn'))
+	}
+    
+});
+
+
+

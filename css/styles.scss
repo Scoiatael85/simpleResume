@@ -83,6 +83,10 @@ body{
 			width: 200px;
 			right: 10%;
 			top: 75px;
+			a{
+				cursor: pointer;
+				text-decoration: none;
+			}
 			@media screen and (max-device-width: 740px) and (orientation: landscape){
 				top: 25px;
 			}
@@ -132,6 +136,9 @@ body{
 			justify-content: center;
 			}
 			.projectItem {
+				-vendor-animation-duration: 3s;
+				-vendor-animation-delay: 2s;
+				-vendor-animation-iteration-count: infinite;
 				position: relative;
 				.projectHover{
 					position: absolute;
