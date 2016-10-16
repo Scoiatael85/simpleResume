@@ -101,17 +101,17 @@ body{
 				top: 200px;
 			}
 			@media screen and (max-device-width: 740px) and (orientation: landscape){
-				top: 180px;
+				top: 100px;
 			}
 			@media screen and (max-device-width: 600px) and (orientation: landscape){
-				top: 130px;
+				top: 100px;
 			}
 			@media screen and (max-device-width: 450px) and (orientation: portrait){
-				top: 400px;
+				top: 375px;
 				width: 60%;
 			}
 			@media screen and (max-device-width: 350px) and (orientation: portrait){
-				top: 385px;
+				top: 325px;
 				width: 70%;
 			}
 		}
