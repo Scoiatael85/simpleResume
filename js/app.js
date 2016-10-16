@@ -10,7 +10,7 @@ var work = [
  							"Guarantees back office and home office network alignment through routine inspections of Aloha and NJE communication."
  							]
  		},
- 		{	"employer" : "Uno Chicago Bar & Grille",
+ 		{	"employer" : "Uno Pizzeria & Grill",
  			"title" : "Assistant General Manager/Marketing Manager",
  			"dates" : "September, 2008 - July, 2012",
  			"location" : "Portland, ME",
@@ -101,10 +101,7 @@ $.fn.isOnScreen = function(){
 $(window).scroll(function(){
 	if ($('.dice').isOnScreen()){
 			$(".dice").animateCss('rollIn');
-	} else {
-		console.log(false)
-		console.log($('.dice').hasClass('.rollIn'))
-	}
+	} 
     
 });
 
