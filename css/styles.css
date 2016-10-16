@@ -56,12 +56,18 @@ body {
       object-fit: cover; }
     body .contactHeader h1, body .contactHeader h2, body .contactHeader h3 {
       color: white; }
+    @media (max-width: 700px) {
+      body .contactHeader h3 {
+        font-size: 1em; } }
     body .contactHeader .name {
       position: absolute;
       text-align: center;
       width: 200px;
       right: 10%;
       top: 75px; }
+      @media screen and (max-device-width: 740px) and (orientation: landscape) {
+        body .contactHeader .name {
+          top: 25px; } }
     body .contactHeader .quoteBox {
       position: absolute;
       width: 40%;
@@ -70,9 +76,20 @@ body {
       @media (max-width: 700px) {
         body .contactHeader .quoteBox {
           top: 200px; } }
-      @media (max-width: 740px) and (orientation: landscape) {
+      @media screen and (max-device-width: 740px) and (orientation: landscape) {
         body .contactHeader .quoteBox {
-          top: 50px; } }
+          top: 200px; } }
+      @media screen and (max-device-width: 600px) and (orientation: landscape) {
+        body .contactHeader .quoteBox {
+          top: 150px; } }
+      @media screen and (max-device-width: 450px) and (orientation: portrait) {
+        body .contactHeader .quoteBox {
+          top: 450px;
+          width: 60%; } }
+      @media screen and (max-device-width: 350px) and (orientation: portrait) {
+        body .contactHeader .quoteBox {
+          top: 400px;
+          width: 70%; } }
   body .projectcontain {
     background-color: #DCDCDC; }
     body .projectcontain .projects {

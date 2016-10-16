@@ -72,13 +72,22 @@ body{
 		h1, h2, h3 {
 			color: white;
 		}
+		h3 {
+			@media (max-width: 700px) {
+				font-size: 1em;				
+			}
+		}
 		.name {
 			position: absolute;
 			text-align: center;
 			width: 200px;
 			right: 10%;
 			top: 75px;
+			@media screen and (max-device-width: 740px) and (orientation: landscape){
+				top: 25px;
 			}
+
+		}
 		.quoteBox {
 			position: absolute;
 			width: 40%;
@@ -87,8 +96,19 @@ body{
 			@media (max-width: 700px){
 				top: 200px;
 			}
-			@media (max-width: 740px) and (orientation: landscape){
-				top: 50px;
+			@media screen and (max-device-width: 740px) and (orientation: landscape){
+				top: 200px;
+			}
+			@media screen and (max-device-width: 600px) and (orientation: landscape){
+				top: 150px;
+			}
+			@media screen and (max-device-width: 450px) and (orientation: portrait){
+				top: 450px;
+				width: 60%;
+			}
+			@media screen and (max-device-width: 350px) and (orientation: portrait){
+				top: 400px;
+				width: 70%;
 			}
 		}
 
