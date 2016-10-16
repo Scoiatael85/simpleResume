@@ -99,12 +99,13 @@ body{
 		.projects {
 			padding: 40px 0;
 			text-align: center;
-			width: 70%;
+			width: 75%;
 			margin: auto;
 			.projectFlex {
 				a{
 					text-decoration: none;
 					color: black;
+					padding-left: 10px;
 				}
 			display: flex;
 			flex-wrap: wrap;
@@ -122,23 +123,50 @@ body{
 				    transition: opacity .75s ease-in-out;
 				    -moz-transition: opacity .75s ease-in-out;
 				    -webkit-transition: opacity .75s ease-in-out;
+					@media (max-width: 600px) {
+					width: 150px;
+					}
+					@media (max-width: 450px) {
+					width: 100px;
+					}
 					&:hover{
 						opacity: .7;
 					}
-
 				}
 				width: 200px;
 				height: 200px;
+				@media (max-width: 600px) {
+					width: 150px;
+				}
+				@media (max-width: 450px) {
+					width: 100px;
+				}
 				#sqlImage{
 					height: 150px;
 					width: auto !important;
+					@media (max-width: 450px) {
+						height: 110px;
+					}
 				}
 				.projectImg {
 					width: 150px;
+					@media (max-width: 450px) {
+						width: 100px;
+					}
 				}
 				p{
 					color: white;
 					margin-top: 35px;
+				}
+				#webOp1 {
+					@media (max-width: 600px) {
+						display: none;
+					}
+				}
+				#webOp2 {
+					@media (max-width: 450px) {
+						display: none;
+					}
 				}
 			}
 		}

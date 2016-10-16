@@ -78,7 +78,7 @@ body {
     body .projectcontain .projects {
       padding: 40px 0;
       text-align: center;
-      width: 70%;
+      width: 75%;
       margin: auto; }
       body .projectcontain .projects .projectFlex {
         display: flex;
@@ -86,7 +86,8 @@ body {
         justify-content: center; }
         body .projectcontain .projects .projectFlex a {
           text-decoration: none;
-          color: black; }
+          color: black;
+          padding-left: 10px; }
       body .projectcontain .projects .projectItem {
         position: relative;
         width: 200px;
@@ -101,16 +102,40 @@ body {
           transition: opacity .75s ease-in-out;
           -moz-transition: opacity .75s ease-in-out;
           -webkit-transition: opacity .75s ease-in-out; }
+          @media (max-width: 600px) {
+            body .projectcontain .projects .projectItem .projectHover {
+              width: 150px; } }
+          @media (max-width: 450px) {
+            body .projectcontain .projects .projectItem .projectHover {
+              width: 100px; } }
           body .projectcontain .projects .projectItem .projectHover:hover {
             opacity: .7; }
+        @media (max-width: 600px) {
+          body .projectcontain .projects .projectItem {
+            width: 150px; } }
+        @media (max-width: 450px) {
+          body .projectcontain .projects .projectItem {
+            width: 100px; } }
         body .projectcontain .projects .projectItem #sqlImage {
           height: 150px;
           width: auto !important; }
+          @media (max-width: 450px) {
+            body .projectcontain .projects .projectItem #sqlImage {
+              height: 110px; } }
         body .projectcontain .projects .projectItem .projectImg {
           width: 150px; }
+          @media (max-width: 450px) {
+            body .projectcontain .projects .projectItem .projectImg {
+              width: 100px; } }
         body .projectcontain .projects .projectItem p {
           color: white;
           margin-top: 35px; }
+        @media (max-width: 600px) {
+          body .projectcontain .projects .projectItem #webOp1 {
+            display: none; } }
+        @media (max-width: 450px) {
+          body .projectcontain .projects .projectItem #webOp2 {
+            display: none; } }
   body .experience {
     background-color: #DCDCDC;
     padding: 40px 0;
