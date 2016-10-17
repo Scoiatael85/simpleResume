@@ -117,14 +117,14 @@
                 </div>
                 <div class="set2">
                     <ul class="set2text">
-                        <li>Bootstrap</li>
+                        <li>Git</li>
                         <li id="rwdLong">Resp<span class="abv">onsive</span> Design</li>
                         <li id="rwdShort">RWD</li>
                         <li>Sass</li>
                         <li>SQL</li>
                     </ul>
                     <ul class="set2img">
-                        <li><img class = "animated dice dice1" src="images/dice1.png" alt="" width="20"><img class = "animated dice dice2" src="images/dice2.png" alt="" width="20"><img class = "animated dice dice3" src="images/dice3.png" alt="" width="20"></li>
+                        <li><img class = "animated dice dice1" src="images/dice1.png" alt="" width="20"><img class = "animated dice dice2" src="images/dice2.png" alt="" width="20"><img class = "animated dice dice3" src="images/dice3.png" alt="" width="20"><img class = "animated dice dice4" src="images/dice4.png" alt="" width="20"></li>
                         <li><img class = "animated dice dice1" src="images/dice1.png" alt="" width="20"><img class = "animated dice dice2" src="images/dice2.png" alt="" width="20"><img class = "animated dice dice3" src="images/dice3.png" alt="" width="20"></li>
                         <li><img class = "animated dice dice1" src="images/dice1.png" alt="" width="20"><img class = "animated dice dice2" src="images/dice2.png" alt="" width="20"><img class = "animated dice dice3" src="images/dice3.png" alt="" width="20"></li>
                         <li><img class = "animated dice dice1" src="images/dice1.png" alt="" width="20"><img class = "animated dice dice2" src="images/dice2.png" alt="" width="20"></li>
