@@ -12,8 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/styles-min.css">
+        <link rel="stylesheet" href="css/animate-min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <!--<link rel="stylesheet" href="css/main.css"> -->
     </head>
@@ -173,8 +173,8 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/app.js"></script>
+        <script src="js/typed-min.js"></script>
+        <script src="js/app-min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
