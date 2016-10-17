@@ -119,7 +119,7 @@ body {
           position: absolute;
           background-color: purple;
           z-index: 100;
-          opacity: 1;
+          opacity: 0;
           height: 150px;
           width: 200px;
           transition: opacity .75s ease-in-out;
@@ -152,7 +152,8 @@ body {
               width: 100px; } }
         body .projectcontain .projects .projectItem p {
           color: white;
-          margin-top: 35px; }
+          margin-top: 10px;
+          line-height: 16px; }
         @media (max-width: 600px) {
           body .projectcontain .projects .projectItem #webOp1 {
             display: none; } }
