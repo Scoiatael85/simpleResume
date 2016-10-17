@@ -143,7 +143,7 @@
                 <li><img src="images/d20bullet.png" alt="d20"><p>D&ampD &mdash; Playing for over 16 years</p></li>
                 <li><img src="images/pinestreet.jpeg" alt="pine street"><p>Charity &mdash; Pine Street Inn</p></li>
                 <li><img src="images/beer.png" alt=""><p>Beer &mdash; I'm a major hop-head!</p></li>
-                <li><img src="images/scotch.jpeg" alt=""><p>Scotch &mdash; Goto: The Balvenie DoubleWood</p></li>
+                <li><img src="images/scotch.jpeg" alt=""><p>Scotch &mdash; Balvenie DoubleWood 12</p></li>
                 <li><img src="images/cigar.png" alt=""><p>Cigars &mdash; Great with scotch!</p></li>
             </ul>   
         </div>
