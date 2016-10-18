@@ -231,19 +231,16 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-document.getElementsByClassName('d-pad')[0].addEventListener('click', function(e) {
-    var left = document.getElementById("left");
-    var up = document.getElementById("up");
-    var right = document.getElementById("right");
-    var down = document.getElementById("down");
-    var pressButton = {
-        left: 'left',
-        up: 'up',
-        right: 'right',
-        down: 'down'
-    };
-console.log(left);
-    player.handleInput(pressButton[e.key]);
+    var pressButton;
+
+    $('.dButton').on('click', function(e) {
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+
+    console.log(pressButton)
+    player.handleInput(pressButton);//
 });
 // document.getElementById("myBtn").addEventListener("click", function(){
 //     document.getElementById("demo").innerHTML = "Hello World";
