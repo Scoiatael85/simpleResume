@@ -1,8 +1,10 @@
+
 /*First div*/
 #namesList {
 	width: 785px;
 	display: flex;
 	flex-wrap: wrap;
+	margin: auto;
 }
 .selector {
 	background-color: gray;
@@ -22,6 +24,7 @@
 	height: 490px;
     border-style: solid;
     border-width: 3px;
+	margin: auto;
 }
 .test {
 	padding-left: 70px;
@@ -44,7 +47,9 @@
 	font-size: 100px;
 	background-color: grey;
 }
-
+.adminBox {
+	margin-left: 75px;
+}
 button {
 	margin-left: 8px;
 	margin-right: 8px;

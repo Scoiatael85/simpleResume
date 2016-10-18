@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (max-device-width: 750px)" href="css/mobile.css" />
     <title>Test Clicker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -18,6 +19,7 @@
         <div class="adminBox">
             <button id="admin">Admin</button>
             <div class="hide">
+                <div class="input">
                 <span>Name:</span><br/>
                 <input id="inputName" type="text" value="" placeholder="Name"><br/>
                 <span>ImgURL:</span><br/>
@@ -25,9 +27,12 @@
                 <option class="optNames" value=""></option>
                 </select><br/>
                 <span>#Clicks:</span><br/>
-                <input id="inputClicks" type="number" value="" placeholder="Clicks"><br/>
+                <input id="inputClicks" type="number" value="" placeholder="Clicks">
+                </div>
+                <div class="buttons">
                 <button id="canBtn">Cancel</button>
                 <button id="saveBtn">Save</button>
+                </div>
             </div>
         </div>
     <script src="js/jQuery.min.js"></script>
