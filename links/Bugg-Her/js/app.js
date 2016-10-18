@@ -240,6 +240,7 @@ document.addEventListener('keyup', function(e) {
     pressButton = $(this).attr('id')
 
     player.handleInput(pressButton);//
+    evt.preventDefault()
 });
 // document.getElementById("myBtn").addEventListener("click", function(){
 //     document.getElementById("demo").innerHTML = "Hello World";
