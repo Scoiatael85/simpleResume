@@ -14,6 +14,14 @@
 	height: 100px;
 	width: 200px;
 }
+#counter {
+	top: 150px;
+	left: 47%;
+	height: 30px;
+	min-width: 30px;
+	max-width: 100%;
+	font-size: 30px;
+}
 span {
 	font-size: 12px;
 }
