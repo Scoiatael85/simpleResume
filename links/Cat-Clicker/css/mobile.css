@@ -25,6 +25,12 @@
 span {
 	font-size: 12px;
 }
+
+@media (orientation: portrait) {
+	.hide {
+		float: right;
+	}
+}
 @media (orientation: landscape) {
 	#namesList {
 		width: 460px;
