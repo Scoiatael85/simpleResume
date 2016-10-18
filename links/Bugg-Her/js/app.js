@@ -239,7 +239,6 @@ document.addEventListener('keyup', function(e) {
     pressButton = $(this).attr('id')
     pressButton = $(this).attr('id')
 
-    console.log(pressButton)
     player.handleInput(pressButton);//
 });
 // document.getElementById("myBtn").addEventListener("click", function(){
