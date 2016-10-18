@@ -1,0 +1,51 @@
+.d-pad, #up, #down, #left, #right {
+	display: block;
+}
+.d-pad {
+	position: fixed;
+	top: 35%;
+	left: 15%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 210px;
+	width: 220px;
+}
+.dButton {
+	position: absolute;
+	height: 100px;
+	width: 66px;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+#up {
+	left: 76px;
+	background-color: red;
+}
+#down {
+	left: 76px;
+	top: 110px;
+	background-color: white;
+}
+#left {
+	top: 66px;
+	background-color: blue;
+}
+#right {
+	top: 66px;
+	left: 152px;
+	background-color: green;
+}
+
+@media (orientation: portrait) {
+
+}
+
+
+@media (orientation: landscape) {
+	.d-pad {
+		position: fixed;
+		top: 45%;
+		left: 70%
+	}
+}
