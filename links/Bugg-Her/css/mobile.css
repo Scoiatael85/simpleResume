@@ -3,38 +3,51 @@
 }
 .d-pad {
 	position: fixed;
-	top: 55%;
-	left: 15%;
+	top: 65%;
+	left: 45%;
 	display: flex;
 	flex-wrap: wrap;
-	height: 210px;
-	width: 220px;
+	height: 320px;
+	width: 330px;
+}
+button {
+	background-color: #004d4d;
+	outline: none;
+	border-style: outset;
+	box-shadow: 0 5px #999;
+	border-radius: 8px;
+	border-color: #ffffff;
+}
+button:active {
+  background-color: #007474;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
 }
 .dButton {
 	position: absolute;
-	height: 100px;
-	width: 66px;
+	height: 150px;
+	width: 99px;
 	font-size: 50px;
 	text-align: center;
 	vertical-align: middle;
 }
 #up {
-	left: 76px;
-	background-color: red;
+	left: 114px;
+	/*background-color: red;*/
 }
 #down {
-	left: 76px;
-	top: 110px;
-	background-color: white;
+	left: 114px;
+	top: 165px;
+	/*background-color: white;*/
 }
 #left {
-	top: 66px;
-	background-color: blue;
+	top: 99px;
+	/*background-color: blue;*/
 }
 #right {
-	top: 66px;
-	left: 152px;
-	background-color: green;
+	top: 99px;
+	left: 228px;
+	/*background-color: green;*/
 }
 
 @media (orientation: portrait) {
@@ -46,6 +59,6 @@
 	.d-pad {
 		position: fixed;
 		top: 45%;
-		left: 70%
+		left: 60%
 	}
 }
