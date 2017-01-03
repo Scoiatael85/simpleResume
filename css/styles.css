@@ -152,7 +152,8 @@ body {
               width: 100px; } }
         body .projectcontain .projects .projectItem p {
           color: white;
-          margin-top: 35px; }
+          margin-top: 10px;
+          line-height: 16px; }
         @media (max-width: 600px) {
           body .projectcontain .projects .projectItem #webOp1 {
             display: none; } }

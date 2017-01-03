@@ -231,3 +231,17 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
+    var pressButton;
+
+    $('.dButton').on('click', function(e) {
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+    pressButton = $(this).attr('id')
+
+    player.handleInput(pressButton);//
+    evt.preventDefault()
+});
+// document.getElementById("myBtn").addEventListener("click", function(){
+//     document.getElementById("demo").innerHTML = "Hello World";
+// });

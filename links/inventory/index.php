@@ -50,8 +50,8 @@
                     </li>
                     <li id="_inventory"><a href="Inventory.php">Inventory in Action</a>
                     </li>
-                    <li id="_about"><a href="about.php">About Me</a>
-                    </li>
+<!--                     <li id="_about"><a href="about.php">About Me</a>
+                    </li> -->
 
                 </ul>
             </div>

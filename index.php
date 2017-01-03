@@ -76,7 +76,7 @@
                             <img class="projectImg" id="sqlImage" src="images/sql.png" alt="">
                         </div>
                     </a>
-                    <a class="projectLink" href="links/mapProject/index.html">
+                    <a class="projectLink" href="links/mapProject/index.php">
                         <div class="projectItem">
                             <h3>Brew Tour Map</h3>
                             <div class="projectHover">
