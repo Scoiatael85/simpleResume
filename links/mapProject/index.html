@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Map Project v1</title>
+  <meta name="author" content="Scott J. Davis">
+  <meta name="description" content="Map Project">
+  <meta name="keywords" content="Map,udacity">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" media='(max-width: 675px)' href="css/mobile.css" type="text/css">
+  </head>
+  <body>
+    <header id="header"></header>  
+    <main class="workArea">
+      <article id='info-box'>
+        <div id="search-nav">    
+            <!-- <input id="searchBox" placeholder="Search…" type="input" data-bind="textInput: query, valueUpdate: 'keydown'" autocomplete="off"></input> -->
+            <input id="searchBox" placeholder="Search…" type="input" data-bind="textInput: query"></input>
+            <button id="directButton" class="grey">Directions</button>
+            <div id="scroller">
+              <ul data-bind="template: {name: 'marker', foreach:markers}"></ul>
+              <script type="text/html" id="marker">
+                <div data-bind="visible: visible">
+                  <a href="#" data-bind="attr: {id: id}">
+                    <li>
+                      <strong data-bind="text: title"></strong>
+                        <p data-bind="text: streetAddress"></p>
+                        <p data-bind="text: cityAddress"></p> 
+                    </li>
+                  </a>
+                </div>
+              </script>    
+            </div>
+            <div id="directions">
+              <form data-bind="submit: doSomething">
+               <input id="addBegin" class= "addInput" type="input" placeholder="Start Adventure Here..."></input><br>
+                <select required size="20" multiple id="waypoints">
+                  <option value="461 Main St Pawtucket RI 02860" class="checkboxText">Narragansett Brewing Co.</option><br>
+                  <option value="One Kendall Square 1 1 Kendall Square Cambridge MA 02139" class="checkboxText">Cambridge Brewing Co.</option><br>
+                  <option value="B 87 Old Creamery Rd Morristown VT 05661" class="checkboxText">Lost Nation Brewing</option><br>
+                  <option value="160 E Hill Rd Monson MA 01057" class="checkboxText">Tree House Brewing Co.</option><br>
+                  <option value="13-W 32 Main St Biddeford ME 04005" class="checkboxText">Banded Horn Brewing Co.</option><br>
+                  <option value="283 Derby St Salem MA 01970" class="checkboxText">Notch Brewing</option><br>
+                  <option value="38 Market St Portsmouth NH 03801" class="checkboxText">Portsmouth Brewery</option><br>
+                  <option value="100 Clinton St Framingham MA 01702" class="checkboxText">Jack’s Abby Brewing</option><br>
+                  <option value="1700 Stratford Ave Stratford CT 06615" class="checkboxText">Two Roads Brewing Co.</option><br>
+                  <option value="174 Williams St Chelsea MA 02150" class="checkboxText">Mystic Brewery</option><br>
+                  <option value="1859 Mountain Rd Stowe VT 05672" class="checkboxText">Idletyme Brewing Co.</option><br>
+                  <option value="89 Commercial St Malden MA 02148" class="checkboxText">Idle Hands Craft Ales</option><br>
+                  <option value="1339 Hooksett Rd Hooksett NH 03106" class="checkboxText">White Birch Brewing</option><br>
+                  <option value="142 Pleasant St Easthampton MA 01027" class="checkboxText">Abandoned Building Brewery</option><br>
+                  <option value="175 Amity Rd Woodbridge CT 06525" class="checkboxText">New England Brewing Co.</option><br>
+                  <option value="274 Jones Woods Rd Newcastle ME 04553" class="checkboxText">Oxbow Brewing Co.</option><br>
+                  <option value="525 US-1 Freeport ME 04032" class="checkboxText">Maine Beer Co.</option><br>
+                  <option value="403 Hill Rd Greensboro Bend VT 05842" class="checkboxText">Hill Farmstead Brewery</option><br>
+                  <option value="30 Germania St Boston MA 02130" class="checkboxText">Samuel Adams</option><br>
+                  <option value="306 Pier Four Blvd Boston MA 02210" class="checkboxText">Harpoon Brewery</option><br>
+                </select>
+                <input id="addEnd" class="addInput" type="input" placeholder="End Adventure Here..."></input>
+                <input id="submit" class="grey" type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+        <div id="hide-showNav">
+            <img id="miniNav" src="img/mapPointer.png" alt="marker map image">
+        </div>   
+      </article>
+      <article id="failure"><h1>Request Failure!</h1></article>
+      <article id="map-canvas"></article>
+    </main>
+    <script type="text/javascript" src="js/library/knockout.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src='js/map.js'></script>
+    <script async defer onerror="onerror()"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVyeAv2wSE0UcCeJVpjp0J8trOk2mjnLE&v=3&callback=initMap">
+    </script>
+  </body>
+</html>
