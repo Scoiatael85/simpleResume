@@ -76,9 +76,9 @@
                             <img class="projectImg" id="sqlImage" src="images/sql.png" alt="">
                         </div>
                     </a>
-                    <a class="projectLink" href="links/mapProject/index.php">
+                    <a class="projectLink" href="links/mapProject/index.html">
                         <div class="projectItem">
-                            <h3>Brew Tour Map</h3>
+                            <h3>Brew Tour</h3>
                             <div class="projectHover">
                                 <p>Find the directions to and from your favorite NE Breweries! AND get them rerouted for efficiency!</p> 
                             </div>
