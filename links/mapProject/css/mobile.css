@@ -1,0 +1,173 @@
+
+#header {
+width: 100%;
+height: 25px;
+}
+#info-box {
+height: 315px;
+margin-top: 25px;
+}
+#scroller {
+  margin-top: 2px;
+}
+#scroller ul {
+	margin-top: 0px;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+
+#scroller li strong {
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+#scroller li p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+#directButton {
+	border: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 10px;
+}
+.grey {
+		background-color: lightgrey;
+}
+.checkboxText {
+  font-size: 14px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+}
+#submit {
+	line-height: 10px;
+}
+#miniNav {
+height: 30px;
+}
+.web-links {
+	font-size: 11px;
+}
+
+@media screen and (orientation: portrait) {
+#info-box {
+width: 100%;
+}
+#search-nav{
+  height: 150px;
+}
+#searchBox {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+#scroller {
+  height: 130px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#scroller ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#scroller ul div{
+	width: 44%;
+	padding-left: 5%;
+	padding-right: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#scroller li strong {
+  font-size: 11px;
+}
+#directions {
+  height: 130px;
+}
+.addInput {
+	width: 40%;
+	margin-left: 5px;
+}
+#addBegin {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+#addEnd {
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+#directButton {
+	width: 32%;
+	margin-left: 2.5px;
+}
+#waypoints {
+	width: 55%;
+	position: absolute;
+	top: 8%;
+	margin-left: 45%;
+}
+#submit {
+	position: absolute;
+	left: 15%;
+	top: 40%;
+}
+
+
+
+
+}
+
+@media screen and (orientation: landscape) {
+#info-box {
+width: 33%;
+}
+#search-nav{
+  height: 220px;
+}
+#searchBox {
+  width: 50%;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+#scroller {
+  height: 240px;
+}
+#scroller li strong {
+  font-size: 13px;
+}
+#directions {
+  height: 240px;
+}
+.addInput {
+	width: 54%;
+	margin-left: 15px;
+}
+#addBegin {
+	margin-top: 6px;
+}
+#directButton {
+	width: 35%;
+	margin-left: 5px;
+}
+#waypoints {
+	width: 210px;
+}
+#submit {
+	margin-left: 10px;
+}
+
+	@media (max-width: 575px) {
+		.addInput {
+			margin-left: 5px;
+		}
+		#submit {
+			margin-left: 5px;
+		}
+	}
+
+
+}
+
+
+
+
+
