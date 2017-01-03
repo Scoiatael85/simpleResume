@@ -76,6 +76,15 @@
                             <img class="projectImg" id="sqlImage" src="images/sql.png" alt="">
                         </div>
                     </a>
+                    <a class="projectLink" href="links/mapProject/index.php">
+                        <div class="projectItem">
+                            <h3>Brew Tour Map</h3>
+                            <div class="projectHover">
+                                <p>Find the directions to and from your favorite NE Breweries! AND get them rerouted for efficiency!</p> 
+                            </div>
+                            <img class="projectImg" id="Brew img" src="images/mapPointer.png" alt="">
+                        </div>
+                    </a>
                     <a class="projectLink" href="links/web-optimization/views/pizza.html">
                         <div class="projectItem">
                             <h3>Web<span id="webOp1">site</span> Opt<span id="webOp2">imization</span></h3>
