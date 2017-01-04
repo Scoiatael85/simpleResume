@@ -414,7 +414,7 @@ function setMarkers(location) {
           return function() {
             infowindow.setContent(location[i].contentString);
             infowindow.open(map,this);
-//            retrieveWeather();
+            retrieveWeather(marker);
             var windowWidth = $(window).width();
             if(windowWidth <= 1080) {
                 map.setZoom(14);
@@ -438,7 +438,7 @@ function setMarkers(location) {
           return function() {
             infowindow.setContent(location[i].contentString);
             infowindow.open(map,marker);
-//            retrieveWeather();
+            retrieveWeather(marker);
             var windowWidth = $(window).width();
             if(windowWidth <= 1080) {
                 map.setZoom(14);
@@ -463,7 +463,8 @@ var viewModel = {
     query: ko.observable(''),
     doSomething : function() {
             onChangeHandler();
-        }
+        },
+    typeAbove: ko.observable('')
 };
 
 viewModel.markers = ko.computed(function() {
@@ -648,13 +649,11 @@ window.onerror = function() {
 //GET Weather Underground JSON
     //Append Weather forecast for Washington DC to .forecast
     //If error on GET JSON, display message
-function retrieveWeather(markersArray) {
-var lat = markersArray[i].lat;
-var lng = markersArray[i].lng;
+function retrieveWeather(marker) {
+    console.log(markersArray);
+var lat = marker.position.lat();
+var lng = marker.position.lng();
 var weatherUgUrl = "http://api.wunderground.com/api/8b2bf4a9a6f86794/conditions/q/" + lat + "," + lng + ".json";
-
-
-//    http://api.wunderground.com/api/API_KEY/conditions/forecast/alert/q/37.252194,-121.360474.json
 
 $.getJSON(weatherUgUrl, function(data) {
     var list = $(".forecast");

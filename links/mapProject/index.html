@@ -34,7 +34,7 @@
             </div>
             <div id="directions">
               <form data-bind="submit: doSomething">
-               <input id="addBegin" class= "addInput" type="input" placeholder="Start Adventure Here..."></input><br>
+               <input id="addBegin" class= "addInput" type="input" placeholder="Start Adventure Here..." data-bind="textInput: typeAbove"></input><br>
                 <select required size="20" multiple id="waypoints">
                   <option value="461 Main St Pawtucket RI 02860" class="checkboxText">Narragansett Brewing Co.</option><br>
                   <option value="One Kendall Square 1 1 Kendall Square Cambridge MA 02139" class="checkboxText">Cambridge Brewing Co.</option><br>
@@ -57,7 +57,7 @@
                   <option value="30 Germania St Boston MA 02130" class="checkboxText">Samuel Adams</option><br>
                   <option value="306 Pier Four Blvd Boston MA 02210" class="checkboxText">Harpoon Brewery</option><br>
                 </select>
-                <input id="addEnd" class="addInput" type="input" placeholder="End Adventure Here..."></input>
+                <input id="addEnd" class="addInput" type="input" placeholder="End Adventure Here..." data-bind="attr: { placeholder: typeAbove }"></input>
                 <input id="submit" class="grey" type="submit" value="Submit">
               </form>
             </div>
