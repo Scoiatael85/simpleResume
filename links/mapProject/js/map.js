@@ -401,7 +401,7 @@ function setMarkers(location) {
                                     location[i].title + '</strong><br><p>' + 
                                     location[i].streetAddress + '<br>' + 
                                     location[i].cityAddress + '<br></p><a class="web-links" href="http://' + location[i].url + 
-                                    '" target="_blank">' + location[i].url + '</a>';
+                                    '" target="_blank">' + location[i].url + '</a><br><div class="forecast"><ul></ul></div>';
 
         var infowindow = new google.maps.InfoWindow({
             content: markers[i].contentString
@@ -414,6 +414,7 @@ function setMarkers(location) {
           return function() {
             infowindow.setContent(location[i].contentString);
             infowindow.open(map,this);
+//            retrieveWeather();
             var windowWidth = $(window).width();
             if(windowWidth <= 1080) {
                 map.setZoom(14);
@@ -437,6 +438,7 @@ function setMarkers(location) {
           return function() {
             infowindow.setContent(location[i].contentString);
             infowindow.open(map,marker);
+//            retrieveWeather();
             var windowWidth = $(window).width();
             if(windowWidth <= 1080) {
                 map.setZoom(14);
@@ -642,3 +644,33 @@ var orientation = screen.orientation || screen.mozOrientation || screen.msOrient
 window.onerror = function() {
     $('#failure').css('display', 'block');
 }
+
+//GET Weather Underground JSON
+    //Append Weather forecast for Washington DC to .forecast
+    //If error on GET JSON, display message
+function retrieveWeather(markersArray) {
+var lat = markersArray[i].lat;
+var lng = markersArray[i].lng;
+var weatherUgUrl = "http://api.wunderground.com/api/8b2bf4a9a6f86794/conditions/q/" + lat + "," + lng + ".json";
+
+
+//    http://api.wunderground.com/api/API_KEY/conditions/forecast/alert/q/37.252194,-121.360474.json
+
+$.getJSON(weatherUgUrl, function(data) {
+    var list = $(".forecast");
+    detail = data.current_observation;
+    list.append('<li>Temp: ' + detail.temp_f + '° F</li>');
+    list.append('<li><img style="width: 25px" src="' + detail.icon_url + '">  ' + detail.icon + '</li>');
+}).error(function(e){
+        $(".forecast").append('<p style="text-align: center;">Sorry! Weather Underground</p><p style="text-align: center;">Could Not Be Loaded</p>');
+    });
+}
+
+
+
+
+
+
+
+
+
