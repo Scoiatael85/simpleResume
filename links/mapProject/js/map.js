@@ -57,15 +57,9 @@ function initMap() {
         stopover: true
       });
     }
-    // if (addEnd.val() === '') {
-    //     addEnd.attr('placeholder', addBegin.val());
-    //     if (addEnd.val() === '') {
-    //         addEnd.val(addBegin.val());
-    //     }
-    //     if (addBegin.val() === '' && addEnd.val() === '') {
-    //         addEnd.attr('placeholder', "End Adventure Here...");
-    //     }
-    // }
+    if (addEnd.val() === '') {
+        addEnd.val(addBegin.val());
+    }
   }
 
     directionsService.route({
@@ -401,7 +395,7 @@ function setMarkers(location) {
                                     location[i].title + '</strong><br><p>' + 
                                     location[i].streetAddress + '<br>' + 
                                     location[i].cityAddress + '<br></p><a class="web-links" href="http://' + location[i].url + 
-                                    '" target="_blank">' + location[i].url + '</a><br><div class="forecast"><ul></ul></div>';
+                                    '" target="_blank">' + location[i].url + '</a><br><div class="forecast"></div>';
 
         var infowindow = new google.maps.InfoWindow({
             content: markers[i].contentString
@@ -464,9 +458,15 @@ var viewModel = {
     doSomething : function() {
             onChangeHandler();
         },
-    typeAbove: ko.observable('')
+    typeAbove: ko.observable(''),
+    availableBreweries: ko.computed(function() {
+        for (var i=0; i<marker.length; i++){
+        names = marker[i].title;
+        return names;
+        }
+    })
 };
-
+console.log (viewModel.availableBreweries());
 viewModel.markers = ko.computed(function() {
     var self = this;
     console.log('--------------');

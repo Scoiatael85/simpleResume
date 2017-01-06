@@ -75,6 +75,9 @@ body {
 #miniNav {
 height: 50px;
 }
+.forecast {
+  margin-left: 10%;
+}
 #failure {
   position: absolute;
   z-index: 99;

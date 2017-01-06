@@ -35,7 +35,8 @@
             <div id="directions">
               <form data-bind="submit: doSomething">
                <input id="addBegin" class= "addInput" type="input" placeholder="Start Adventure Here..." data-bind="textInput: typeAbove"></input><br>
-                <select required size="20" multiple id="waypoints">
+                <select required size="20" multiple id="waypoints" data-bind="options: availableBreweries" size="5" multiple="true">
+<!--                 <select required size="20" multiple id="waypoints">
                   <option value="461 Main St Pawtucket RI 02860" class="checkboxText">Narragansett Brewing Co.</option><br>
                   <option value="One Kendall Square 1 1 Kendall Square Cambridge MA 02139" class="checkboxText">Cambridge Brewing Co.</option><br>
                   <option value="B 87 Old Creamery Rd Morristown VT 05661" class="checkboxText">Lost Nation Brewing</option><br>
@@ -55,7 +56,7 @@
                   <option value="525 US-1 Freeport ME 04032" class="checkboxText">Maine Beer Co.</option><br>
                   <option value="403 Hill Rd Greensboro Bend VT 05842" class="checkboxText">Hill Farmstead Brewery</option><br>
                   <option value="30 Germania St Boston MA 02130" class="checkboxText">Samuel Adams</option><br>
-                  <option value="306 Pier Four Blvd Boston MA 02210" class="checkboxText">Harpoon Brewery</option><br>
+                  <option value="306 Pier Four Blvd Boston MA 02210" class="checkboxText">Harpoon Brewery</option><br> -->
                 </select>
                 <input id="addEnd" class="addInput" type="input" placeholder="End Adventure Here..." data-bind="attr: { placeholder: typeAbove }"></input>
                 <input id="submit" class="grey" type="submit" value="Submit">
