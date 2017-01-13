@@ -425,29 +425,28 @@ function setMarkers(location) {
           }; 
         })(markersArray[i], i));
         
-        //Click nav element to view infoWindow
-            //zoom in and center location on click
-        var searchNav = $('#nav' + i);
-        searchNav.click((function(marker, i) {
-          return function() {
-            infowindow.setContent(location[i].contentString);
-            infowindow.open(map,marker);
-            retrieveWeather(marker);
-            var windowWidth = $(window).width();
-            if(windowWidth <= 1080) {
-                map.setZoom(14);
-            } else if(windowWidth > 1080) {
-                map.setZoom(16);  
-            }
-            map.setCenter(marker.getPosition());
-            location[i].picBoolTest = true;
-            if (marker.getAnimation() !== null) {
-                marker.setAnimation(null);
-            } else {
-                marker.setAnimation(google.maps.Animation.BOUNCE);
-            }
-          }; 
-        })(markersArray[i], i));
+
+        // var searchNav = $('#nav' + i);
+        // searchNav.click((function(marker, i) {
+        //   return function() {
+        //     infowindow.setContent(location[i].contentString);
+        //     infowindow.open(map,marker);
+        //     var windowWidth = $(window).width();
+        //     if(windowWidth <= 1080) {
+        //         map.setZoom(14);
+        //     } else if(windowWidth > 1080) {
+        //         map.setZoom(16);  
+        //     }
+        //     map.setCenter(marker.getPosition());
+        //     location[i].picBoolTest = true;
+        //     if (marker.getAnimation() !== null) {
+        //         marker.setAnimation(null);
+        //     } else {
+        //         marker.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        //   }; 
+        // })(markersArray[i], i));
+
     }
 }
 
@@ -459,14 +458,26 @@ var viewModel = {
             onChangeHandler();
         },
     typeAbove: ko.observable(''),
-    availableBreweries: ko.computed(function() {
-        for (var i=0; i<marker.length; i++){
-        names = marker[i].title;
-        return names;
-        }
-    })
+    showInfo : function(location, i){
+        google.maps.event.trigger(markersArray[i], 'click');
+    }
+    // returnBreweriesArray: ko.computed(function(breweriesArray) {
+    //     console.log('breweriesArray', breweriesArray);
+    //     return breweriesArray;
+    // }),
+    // availableBreweries: ko.computed(function(a) {
+    //     var breweriesArray = [];
+    //     for (var i=0; i<markers.length; i++){
+    //         breweriesArray.push(markers[i].title);
+    //         if (i === 19) {
+    //             console.log('function', breweriesArray);
+    //             viewModel.returnBreweriesArray(breweriesArray);
+    //         }
+    //     }
+    //     return a;
+    // })
 };
-console.log (viewModel.availableBreweries());
+// console.log (viewModel.availableBreweries());
 viewModel.markers = ko.computed(function() {
     var self = this;
     console.log('--------------');

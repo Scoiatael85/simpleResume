@@ -23,10 +23,10 @@
               <script type="text/html" id="marker">
                 <div data-bind="visible: visible">
                   <a href="#" data-bind="attr: {id: id}">
-                    <li>
+                    <li data-bind="click: $root.showInfo">
                       <strong data-bind="text: title"></strong>
-                        <p data-bind="text: streetAddress"></p>
-                        <p data-bind="text: cityAddress"></p> 
+                      <p data-bind="text: streetAddress"></p>
+                      <p data-bind="text: cityAddress"></p> 
                     </li>
                   </a>
                 </div>
@@ -35,7 +35,7 @@
             <div id="directions">
               <form data-bind="submit: doSomething">
                <input id="addBegin" class= "addInput" type="input" placeholder="Start Adventure Here..." data-bind="textInput: typeAbove"></input><br>
-                <select required size="20" multiple id="waypoints" data-bind="options: availableBreweries" size="5" multiple="true">
+<!--                 <select required size="20" multiple id="waypoints" data-bind="options: availableBreweries" size="5" multiple="true"> -->
 <!--                 <select required size="20" multiple id="waypoints">
                   <option value="461 Main St Pawtucket RI 02860" class="checkboxText">Narragansett Brewing Co.</option><br>
                   <option value="One Kendall Square 1 1 Kendall Square Cambridge MA 02139" class="checkboxText">Cambridge Brewing Co.</option><br>

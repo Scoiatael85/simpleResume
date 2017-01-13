@@ -53,11 +53,10 @@ body {
   overflow-y: auto;
   height: 375px;
 }
-#scroller li strong {
-  margin-bottom: 5px;
-  font-size: 15px;
+#scroller div a li {
+  margin-top: 5px;
 }
-#scroller li p {
+#scroller div a li p {
   margin-top: 2px;
   margin-bottom: 2px;
   font-size: 12px;
