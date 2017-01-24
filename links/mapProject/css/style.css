@@ -1,98 +1,78 @@
 html,
 body {
-  font-family: Arial, sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-#waypoints {
-  background-color: transparent;
-  overflow-y: auto;
-  border: none;
-  width: 220px;
-  outline: none;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .workArea {
-  height: 100%;
-  width: 100%;
-  position: fixed;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
 #header {
-  width: 100%;
-  height: 35px;
-  background-color: blue;
-  float: left;
+    width: 100%;
+    height: 35px;
+    background-color: blue;
+    float: left;
 }
 #info-box {
-  height: 450px;
-  width: 30%;
-  float: left;
-  position: fixed;
-  margin-top: 35px;
-  z-index: 10;
+    height: 450px;
+    width: 30%;
+    float: left;
+    position: fixed;
+    margin-top: 35px;
+    z-index: 10;
 }
-#search-nav{
-  height: 400px;
-  background-color: gray;
-  opacity: .9;
+#search-nav {
+    height: 400px;
+    background-color: gray;
+    opacity: .9;
 }
 #map-canvas {
-  top: 5%;
-  height: 95%;
-  width: 100%;
+    top: 5%;
+    height: 95%;
+    width: 100%;
 }
 #searchBox {
-  float: left;
-  margin-right: 20px;
-}
-.addInput {
-  margin-left: 25%;
+    margin-right: 20px;
 }
 #scroller {
-  margin-top: 5px;
-  overflow-y: auto;
-  height: 375px;
+    margin-top: 5px;
+    overflow-y: auto;
+    height: 375px;
 }
 #scroller div a li {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 #scroller div a li p {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  font-size: 12px;
-}
-#directions {
-  height: 375px;
-  display: none;
-}
-#directButton {
-  width: 35%;
-}
-.checkboxText {
-  font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
 }
 #miniNav {
-height: 50px;
+    height: 50px;
 }
 .forecast {
-  margin-left: 10%;
+    position: absolute;
+    top: 73%;
+    left: 55%;
 }
 #failure {
-  position: absolute;
-  z-index: 99;
-  top: 30%;
-  left: 40%;
-  width: 50%;
-  height: 35%;
-  display: none;
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 40%;
+    width: 50%;
+    height: 35%;
+    display: none;
 }
 #failure h1 {
-  color: red;
-  font-weight: 900;
+    color: red;
+    font-weight: 900;
 }
-
 @media (max-width: 815px) {
-  #searchBox {
-  margin-right: 10px;
-}
+    #searchBox {
+        margin-right: 10px;
+    }
 }

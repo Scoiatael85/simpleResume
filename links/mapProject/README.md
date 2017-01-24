@@ -5,6 +5,10 @@ _Get drunk via drinking [always have a DD]_
 
 This is a map using the Google.map.api to allow you to plan a trip to visit various brweries around NE and get back home.
 
+### Opening the App:
+Assuming you either opened a zipfile or forked a repo from github, you may open the app simply by double clicking on the file named index.html.
+The file may also be found at www.daelric.com/links/mapProject/index.html (visit www.daelric.com and click on the link titled Brew Tour)
+
 ### Map:
 Immediately when the map loads up, it'll be centered on NE. You'll se 20 beer mugs DROP from the sky and land atop the breweries. You may click directly on one of these markers and have two things happen. 1) the map will center on the sleceted brewery and zoom in a considerable bit. 2) the marker will have an informative infoWindow pop open to give you some details.
 
@@ -26,11 +30,11 @@ Within the Directions div you find 5 items.
 You may select as few as 0 and as many s 6 waypoints. The map reorients itself to a proper zoom and centering as needed.
 
 ### Where it stands:
-This is currently designed to meet the requirements to pass the Udacity test. However, I intend to expand on it to display written directions as well. In the future, this will most likely evolve into a greater project.
+This is currently designed to meet the requirements to pass the Udacity test. However, I intend to expand on it to displaying polyline and written directions as well. In the future, this will most likely evolve into a greater project.
 
 ## Setup - Installation
 For the app to function correctly, you need to have a directory containing:
-1. mapProject.html
+1. index.html
 2. 'css' folder
   * style.css
   * style.min.css
@@ -48,10 +52,9 @@ For the app to function correctly, you need to have a directory containing:
 5.  README.md
 
 If these items are not arrainged correctly, or any part of their names (including caps-vs-lowercase),
-the resources.js and engine.js will not find them.
+index.html will not find them.
 
 ## Known bugs
-I havn't the slightet clue why, but 1/4 loads has an error message. If this happens, simply reloads.
 Also the command to load the map with directions can/will happen automatically. If your imput causes an error. Simply finish plugging the rest in and hit the submit button.
 
 
