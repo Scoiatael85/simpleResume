@@ -1,0 +1,355 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	max-width: 1440px;
+	h1{
+	text-align: center;
+	color: #5D2E8C;
+	}
+	.contactme{
+		height: 150px;
+		color: white;
+		background-color: #F76025;
+		@media (max-width: 600px){
+			height: 250px;
+		}
+		
+		.contactInfo{
+			padding-top: 35px;
+			width: 50%;
+			float: left;
+			font-size: 1.5em;
+			@media (max-width: 600px){
+				width: 100%;
+			}
+			.floatbox{
+				margin: auto;
+				display: block;
+				width: 150px;
+				a{
+					line-height: 38px;					
+					margin-left: 10px;
+					float: left;
+					color: white;
+					text-decoration: none;
+				}
+				span{
+					float: left;
+					clear: both;
+					.material-icons{
+						font-size: 34px;
+					}
+
+				}
+			}
+
+		}
+	}
+	.social{
+		width: 50%;
+		padding-top: 50px;		
+		float: left;
+		@media (max-width: 600px){
+			width: 100%;
+		}
+		.icons{
+			display: block;
+			width: 170px;
+			margin: auto;
+			img{
+				width:50px;
+			}
+		}
+		
+	}
+	.contactHeader {
+		max-width: 1440px;
+		#bg {
+			  display: block;
+			  width: 100vw;
+			  height: 100vh;
+			  object-fit: cover;
+		}
+		h1, h2, h3 {
+			color: white;
+		}
+		h3 {
+			@media (max-width: 700px) {
+				font-size: 1em;				
+			}
+		}
+		.name {
+			position: absolute;
+			text-align: center;
+			width: 200px;
+			right: 10%;
+			top: 75px;
+			a{
+				cursor: pointer;
+				text-decoration: none;
+			}
+			@media screen and (max-device-width: 740px) and (orientation: landscape){
+				top: 25px;
+			}
+
+		}
+		.quoteBox {
+			position: absolute;
+			width: 40%;
+			left: 15px;
+			top: 350px;
+			@media (max-width: 700px){
+				top: 200px;
+			}
+			@media screen and (max-device-width: 740px) and (orientation: landscape){
+				top: 100px;
+			}
+			@media screen and (max-device-width: 600px) and (orientation: landscape){
+				top: 100px;
+			}
+			@media screen and (max-device-width: 450px) and (orientation: portrait){
+				top: 375px;
+				width: 60%;
+			}
+			@media screen and (max-device-width: 350px) and (orientation: portrait){
+				top: 325px;
+				width: 70%;
+			}
+		}
+
+
+	}
+	.projectcontain{
+		background-color: #DCDCDC;
+		.projects {
+			padding: 40px 0;
+			text-align: center;
+			width: 75%;
+			margin: auto;
+			.projectFlex {
+				a{
+					text-decoration: none;
+					color: black;
+					padding-left: 10px;
+				}
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			}
+			.projectItem {
+				-vendor-animation-duration: 3s;
+				-vendor-animation-delay: 2s;
+				-vendor-animation-iteration-count: infinite;
+				position: relative;
+				.projectHover{
+					position: absolute;
+					background-color: purple;
+					z-index: 100;
+					opacity: 0;
+					height: 150px;
+					width: 200px;
+				    transition: opacity .75s ease-in-out;
+				    -moz-transition: opacity .75s ease-in-out;
+				    -webkit-transition: opacity .75s ease-in-out;
+					@media (max-width: 600px) {
+					width: 150px;
+					}
+					@media (max-width: 450px) {
+					width: 100px;
+					}
+					&:hover{
+						opacity: .7;
+					}
+				}
+				width: 200px;
+				height: 200px;
+				@media (max-width: 600px) {
+					width: 150px;
+				}
+				@media (max-width: 450px) {
+					width: 100px;
+				}
+				#sqlImage{
+					height: 150px;
+					width: auto !important;
+					@media (max-width: 450px) {
+						height: 110px;
+					}
+				}
+				.projectImg {
+					width: 150px;
+					@media (max-width: 450px) {
+						width: 100px;
+					}
+				}
+				p{
+					color: white;
+					margin-top: 10px;
+					line-height: 16px;
+				}
+				#webOp1 {
+					@media (max-width: 600px) {
+						display: none;
+					}
+				}
+				#webOp2 {
+					@media (max-width: 450px) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.experience{
+		background-color: #DCDCDC;
+		  padding: 40px 0;
+		  padding: 20px 0 40px 0;
+		.companybox{
+			margin: auto;
+			display: block;
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap;
+			@media (max-width: 700px){
+				display: block;
+				text-align: center;
+			}
+			.company{
+				width: 30%;
+				margin: auto;
+				h2{
+					font-size: 1.5em;
+				}
+				@media (max-width: 700px){
+					width: 100%;
+				}
+			}
+			.details{
+				width: 70%;
+				margin: inherit;
+				p {
+					margin-left: 10px; 
+				}
+				@media (max-width: 700px){
+					width: 100%;
+				}
+				li{
+					text-align: left;
+				}
+			}
+		}
+		clear: both;
+	}
+	.interests{
+		padding: 20px 0 40px 0;
+		.myInterests{
+			width: 285px;
+			margin: auto;
+			list-style: none;
+			li{
+				height: 40px;
+				line-height: 40px;
+				vertical-align: middle;
+
+				p{
+					display: inline-block;
+				}
+				img{
+					height: 25px;
+					display: inline-block;
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+	}
+	.skills{
+		padding: 20px 0 40px 0;
+		.skillsflex{
+			display: flex;
+			@media (max-width: 600px){
+				display: block;
+			}
+			.set1{
+				display: flex;
+				width: 50%;
+				@media (max-width: 600px){
+					width: 100%;
+				}
+				.set1text{
+					font-size: 1.2em;
+					margin-left: 10%;
+					width: 50%;
+					@media (max-width: 600px){
+						margin-left: 5%;
+					}
+				}
+				.set1img{
+					img{
+						margin: 0 5px;
+						@media (max-width: 750px){
+						margin: 0 2px;
+						}	
+					}
+					@media (min-width: 601px) and (max-width: 619px) {
+						padding-left: 30px;											
+					}				
+					width:50%;
+				}
+			}
+			.set2{
+				display: flex;
+				width: 50%;
+				@media (max-width: 600px){
+					width: 100%;
+				}
+				.set2text{
+					font-size: 1.2em;
+					margin-left: 10%;
+					width: 50%;
+					#rwdShort {display: none;}
+					@media (max-width: 600px){
+						margin-left: 5%;
+					}
+					@media (min-width: 600px) and (max-width: 670px) {
+						#rwdLong {display: none;}
+						#rwdShort {display: block;}						
+					}
+					@media (max-width: 950px){
+						.abv {display: none;}
+					}
+				}
+				.set2img{
+					img{
+						margin: 0 5px;
+						@media (max-width: 750px){
+						margin: 0 2px;
+						}	
+					}
+					width:50%;
+				}
+			}
+			ul{
+				li{
+					margin: 5px 0;
+					list-style: none;
+				}
+			}
+		}
+	}
+	.breaker{
+		clear: both;
+		margin: 20px 0;
+		height: 25px;
+		background-image: url(../images/d20.png),
+						  url(../images/d20.png),
+						  url(../images/d20.png);
+		background-size: 25px 25px,
+						 25px 25px,
+						 25px 25px;
+		background-repeat: no-repeat, 
+		                   no-repeat,
+		                   no-repeat;
+       	background-position: 50%, 
+                            70%,
+                            30%;
+}
+}

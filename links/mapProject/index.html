@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Map Project v1</title>
+  <meta name="author" content="Scott J. Davis">
+  <meta name="description" content="Map Project">
+  <meta name="keywords" content="Map,udacity">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" media='(max-width: 675px)' href="css/mobile.min.css">
+  </head>
+  <body>
+    <header id="header"></header>  
+    <main class="workArea">
+      <article id='info-box'>
+        <div id="search-nav">    
+            <input id="searchBox" placeholder="Search…" type="input" data-bind="textInput: query">
+            <div id="scroller">
+              <ul data-bind="template: {name: 'marker', foreach:markers}"></ul>
+              <script type="text/html" id="marker">
+                <div data-bind="visible: visible">
+                  <a href="#" data-bind="attr: {id: id}">
+                    <li data-bind="click: $root.showInfo">
+                      <strong data-bind="text: title"></strong>
+                      <p data-bind="text: streetAddress"></p>
+                      <p data-bind="text: cityAddress"></p> 
+                    </li>
+                  </a>
+                </div>
+              </script>    
+            </div>
+        </div>
+        <div id="hide-showNav">
+            <img id="miniNav" src="img/mapPointer.png" alt="marker map image">
+        </div>   
+      </article>
+      <article id="failure"><h1>Request Failure!</h1></article>
+      <article id="map-canvas"></article>
+    </main>
+    <script src="js/library/knockout.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src='js/map.min.js'></script>
+    <script async defer onerror="onerror()"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVyeAv2wSE0UcCeJVpjp0J8trOk2mjnLE&v=3&callback=initMap">
+    </script>
+  </body>
+</html>

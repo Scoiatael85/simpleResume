@@ -1,0 +1,16 @@
+/* I will eliminate the alert boxes in the future
+   for something more stylish. for now all is well */
+}
+body {
+    text-align: center;
+    background-size: auto;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+canvas {
+	float: left;
+}
+
+.d-pad, #up, #down, #left, #right {
+	display: none;
+}

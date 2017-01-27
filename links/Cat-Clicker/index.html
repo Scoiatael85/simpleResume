@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (max-device-width: 750px)" href="css/mobile.css" />
+    <title>Test Clicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="namesList"></div>
+    <div class="container">
+        <div class="test">
+            <h3 id="cat-name"></h2>
+            <img id="cat-img" class='halfCat' src="">
+            <div id="counter"></div>
+        </div>
+    </div>
+        <div class="adminBox">
+            <button id="admin">Admin</button>
+            <div class="hide">
+                <div class="input">
+                <span>Name:</span><br/>
+                <input id="inputName" type="text" value="" placeholder="Name"><br/>
+                <span>ImgURL:</span><br/>
+                <select id="options" name="cats">
+                <option class="optNames" value=""></option>
+                </select><br/>
+                <span>#Clicks:</span><br/>
+                <input id="inputClicks" type="number" value="" placeholder="Clicks">
+                </div>
+                <div class="buttons">
+                <button id="canBtn">Cancel</button>
+                <button id="saveBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/MVC.js"></script>
+</body>
+</html>
+
+

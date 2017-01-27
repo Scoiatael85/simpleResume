@@ -1,0 +1,64 @@
+.d-pad, #up, #down, #left, #right {
+	display: block;
+}
+.d-pad {
+	position: fixed;
+	top: 65%;
+	left: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 320px;
+	width: 330px;
+}
+button {
+	background-color: #004d4d;
+	outline: none;
+	border-style: outset;
+	box-shadow: 0 5px #999;
+	border-radius: 8px;
+	border-color: #ffffff;
+}
+button:active {
+  background-color: #007474;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+.dButton {
+	position: absolute;
+	height: 150px;
+	width: 99px;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+#up {
+	left: 114px;
+	/*background-color: red;*/
+}
+#down {
+	left: 114px;
+	top: 165px;
+	/*background-color: white;*/
+}
+#left {
+	top: 99px;
+	/*background-color: blue;*/
+}
+#right {
+	top: 99px;
+	left: 228px;
+	/*background-color: green;*/
+}
+
+@media (orientation: portrait) {
+
+}
+
+
+@media (orientation: landscape) {
+	.d-pad {
+		position: fixed;
+		top: 45%;
+		left: 62%
+	}
+}

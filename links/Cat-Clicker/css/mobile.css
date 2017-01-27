@@ -1,0 +1,67 @@
+#namesList {
+	width: 310px;
+}
+.selector {
+	width: 60px;
+	font-size: 10px;
+}
+.container {
+	max-width: 304px; 
+	max-height: 210px;
+}
+.adminBox {
+	margin-left: 10px; 
+	height: 10px;
+	width: 200px;
+}
+#counter {
+	top: 150px;
+	left: 47%;
+	height: 30px;
+	min-width: 30px;
+	max-width: 100%;
+	font-size: 30px;
+}
+span {
+	font-size: 12px;
+}
+
+@media (orientation: portrait) {
+	.hide {
+		float: right;
+	}
+}
+@media (orientation: landscape) {
+	#namesList {
+		width: 460px;
+	}
+	.selector {
+		width: 90px;
+		font-size: 10px;
+	}
+	.container {
+		max-width: 456px; 
+		max-height: 210px;
+	}
+	#cat-img {
+		max-width: 65%;
+	}
+	.adminBox {
+		margin: auto; 
+		height: 50px;
+		width: 450px;
+	}
+	input {
+		width: 75px;
+	}
+	.input {
+		display: flex;
+	}
+	.buttons {
+		float: right;
+	}
+/*	#namesList, .container {
+		float: right;
+	}*/
+
+}

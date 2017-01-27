@@ -1,0 +1,65 @@
+
+/*First div*/
+#namesList {
+	width: 785px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.selector {
+	background-color: gray;
+	width: 155px;
+	height: 25px;
+    border-style: solid;
+    border-width: 1px;
+}
+.catNames {
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+/*Second div*/
+.container {
+	width: 779px;
+	height: 490px;
+    border-style: solid;
+    border-width: 3px;
+	margin: auto;
+}
+.test {
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 2px;
+	text-align: center;
+}
+.halfCat {
+	max-width: 100%;
+}
+#counter {
+	display: none;
+	position: absolute;
+	margin-top: 0;
+	top: 320px;
+	left: 350px;
+	height: 100px;
+	min-width: 100px;
+	max-width: 100%;
+	font-size: 100px;
+	background-color: grey;
+}
+.adminBox {
+	margin-left: 75px;
+}
+button {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.hide {
+	display: none;
+}
+
+#admin {
+	float: left;
+	margin-bottom: 100px;
+}
