@@ -35,6 +35,7 @@
             </div>
             
         </div>
+    <section>
         <div class="projectcontain">
             <div class="projects">
                 <h1>Projects</h1>
@@ -78,11 +79,20 @@
                     </a>
                     <a class="projectLink" href="links/mapProject/index.html">
                         <div class="projectItem">
-                            <h3>Brew Tour</h3>
+                            <h3>Brew Tour Map</h3>
                             <div class="projectHover">
                                 <p>Find the directions to and from your favorite NE Breweries! AND get them rerouted for efficiency!</p> 
                             </div>
                             <img class="projectImg" id="Brew img" src="images/mapPointer.png" alt="">
+                        </div>
+                    </a>
+                    <a class="projectLink" href="links/feedReader_Tester/index.html">
+                        <div class="projectItem">
+                            <h3>Tech News</h3>
+                            <div class="projectHover">
+                                <p>Check out this Feed Reader!</p> <p>The best part is the use of Jasmine to test JS functionality with a few suites of specs!</p> 
+                            </div>
+                            <img class="projectImg" id="Brew img" src="images/techNews.png" alt="">
                         </div>
                     </a>
                     <a class="projectLink" href="links/web-optimization/views/pizza.html">
@@ -180,7 +190,7 @@
             </div>
             
         </div>
-
+    </section>  
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/typed-min.js"></script>
         <script src="js/app-min.js"></script>
