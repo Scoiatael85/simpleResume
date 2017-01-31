@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 1440px; }
+ }
   body h1 {
     text-align: center;
     color: #5D2E8C; }
@@ -280,12 +280,11 @@ body {
     background-size: 25px 25px, 25px 25px, 25px 25px;
     background-repeat: no-repeat,  no-repeat, no-repeat;
     background-position: 50%,  70%, 30%; }
- @media (min-width: 1440px) {
+
   section {
-    width: 1440px;
-    margin-left: calc((100vw - 1440px) / 2);
-    margin-right: auto;
-  }
+    max-width: 1440px;
+    margin: auto;
+  
  }
 
 /*# sourceMappingURL=styles.css.map */
