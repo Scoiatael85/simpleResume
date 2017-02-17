@@ -59,7 +59,16 @@
                             <img class="projectImg" src="images/cat.png" alt="">
                         </div>
                     </a>
-                    <a class="projectLink" href="links/Start/index.html">
+                    <a class="projectLink" href="lostinitiativeshow.com">
+                        <div class="projectItem">
+                            <h3>Lost Initiative</h3>
+                            <div class="projectHover">
+                                <p>I'm a nerd. So of course I play Dungeons and Dragons... online... live... for other to watch. Check it out!</p>
+                            </div>
+                            <img class="projectImg" src="images/LIBanner.png" alt="">
+                        </div>
+                    </a>
+<!--                     <a class="projectLink" href="links/Start/index.html">
                         <div class="projectItem">
                             <h3>Reponsive Blog</h3>
                             <div class="projectHover">
@@ -67,7 +76,7 @@
                             </div>
                             <img class="projectImg" src="images/city.png" alt="">
                         </div>
-                    </a>
+                    </a> -->
                     <a class="projectLink" href="links/inventory/index.php">
                         <div class="projectItem">
                             <h3>SQL Inventory</h3>
