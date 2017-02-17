@@ -59,7 +59,7 @@
                             <img class="projectImg" src="images/cat.png" alt="">
                         </div>
                     </a>
-                    <a class="projectLink" href="lostinitiativeshow.com">
+                    <a class="projectLink" href="http://www.lostinitiativeshow.com">
                         <div class="projectItem">
                             <h3>Lost Initiative</h3>
                             <div class="projectHover">
