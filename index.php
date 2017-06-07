@@ -50,13 +50,22 @@
                             <img class="projectImg" src="images/pink-girl.png" alt="">
                         </div>
                     </a>
-                    <a class="projectLink" href="links/Cat-Clicker/index.html">
+<!--                     <a class="projectLink" href="links/Cat-Clicker/index.html">
                         <div class="projectItem">
                             <h3>Cat-Clicker</h3>
                             <div class="projectHover">
                                 <p>A great time waster. Why else would someone use the internet?</p>    
                             </div>            
                             <img class="projectImg" src="images/cat.png" alt="">
+                        </div>
+                    </a>
+ -->                    <a class="projectLink" href="http://www.bagelsandcream.com">
+                        <div class="projectItem">
+                            <h3>Bagels & Cream</h3>
+                            <div class="projectHover">
+                                <p>This is a website I was hired to make for a client. At their request it was designed in Squarespace.</p>    
+                            </div>            
+                            <img class="projectImg" src="images/cappuccino3.jpg" alt="">
                         </div>
                     </a>
                     <a class="projectLink" href="http://www.lostinitiativeshow.com">
